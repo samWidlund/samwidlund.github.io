@@ -72,37 +72,25 @@ html, body {
     visibility: hidden;
 }
 
-.nameHeader.rotated {
-    transform: rotate(90deg);
-    transition: transform 0.5s ease;
-}
-
-.SAMUEL.rotaded {
-    transform: rotate(90deg);
-    transition: transform 0.5s ease;
-}
-
-.SAMUEL.rotadeBack {
-    transform: rotate(-90deg);
-    transition: transform 0.5s ease;
-}
-
-.WIDLUND.rotaded {
-    transform: rotate(90deg);
-    transition: transform 0.5s ease;
-}
-
-
 /* responsive */
 @media (max-width: 768px) {
     .nameHeader p {
-        font-size: 10vw;
+        font-size: 11vw;
+    }
+    .SAMUEL {
+        transform: rotate(90deg);
+        transition: transform 0.5s ease;
+    }
+
+    .WIDLUND {
+        transform: rotate(-90deg);
+        transition: transform 0.5s ease;
     }
 }
 
 @media (max-width: 480px) {
     .nameHeader p {
-        font-size: 9vw;
+        font-size: 11.2vw;
     }
 }
 
