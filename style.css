@@ -1,0 +1,201 @@
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* Ensure all elements use border-box sizing */
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#mainContainerBackground {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90vh;
+    z-index: 0;
+    background: linear-gradient(132deg, rgba(239, 239, 239, 0.94), rgba(112, 112, 112, 0.44), rgba(176, 176, 176, 0.69), rgba(214, 214, 214, 0.84), rgba(252, 252, 252, 0.99));
+    background-size: 200% 200%;
+    animation: Gradient 15s ease infinite;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 1); /* Add box shadow */
+}
+
+.nameHeader {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1;
+}
+
+.nameHeader p {
+    font-size: 9vw;
+    font-weight: bold;
+}
+
+.nameHeader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nameHeader.rotated {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.SAMUEL.rotaded {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+.SAMUEL.rotadeBack {
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease;
+}
+
+.WIDLUND.rotaded {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+    .nameHeader p {
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .nameHeader p {
+        font-size: 9vw;
+    }
+}
+
+#navigateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#navigateMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#navigateMenu a {
+    font-size: 1.5em;
+    text-decoration: none; /* Remove underline by default */
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+#navigateMenu a:visited {
+    color: black;
+}
+
+#navigateMenu a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* resume */
+#firstResumeContainer {
+    margin-left: auto; /* add container instead and align and justify content center? */
+    margin-right: auto;
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Add box shadow */
+    background: linear-gradient(132deg, rgba(239, 239, 239, 0.94), rgba(112, 112, 112, 0.44), rgba(176, 176, 176, 0.69), rgba(214, 214, 214, 0.84), rgba(252, 252, 252, 0.99));
+    background-size: 200% 200%;
+    animation: Gradient 15s ease infinite;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: bold;
+}
+
+.infoContainer {
+    padding: 1rem;
+    width: 80vw;
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add box shadow */
+}
+
+.rowContainer {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.leftColumn, .rightColumn {
+    width: 50%;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    /* border: 1px solid black; */
+}
+
+.leftColumn {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.rightColumn {
+    display: flex;
+    justify-content: end;
+}
+
+#taskBar {
+    width: 100%;
+    margin-top: 10vh;
+    position: absolute;
+    font-size: 1em;
+    border-top: 1px solid black;
+    padding-right: 1rem;
+    text-align: end;
+}
