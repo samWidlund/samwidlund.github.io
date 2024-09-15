@@ -17,18 +17,18 @@ window.addEventListener("load", function() {
 
     window.addEventListener("scroll", function() {
         if (window.scrollY > scrollLimit) {
-            // nameText.classList.add("hidden");
+            nameText.classList.add("hidden");
             // nameText.classList.add("rotated"); // Add rotation class
-            nameSAMUEL.classList.add("rotaded");
-            nameWIDLUND.classList.add("rotaded");
+            // nameSAMUEL.classList.add("rotaded");
+            // nameWIDLUND.classList.add("rotaded");
         } else {
-            // nameText.classList.remove("hidden");
+            nameText.classList.remove("hidden");
             // nameText.classList.remove("rotated"); // Remove rotation class
-            nameSAMUEL.classList.remove("rotaded");
-            nameWIDLUND.classList.remove("rotaded");
+            // nameSAMUEL.classList.remove("rotaded");
+            // nameWIDLUND.classList.remove("rotaded");
         }
 
-        if (window.scrollY > fadeLimit) {
+        if (window.scrollY > scrollLimit) { // CHANGE TO fadeLimit!
             nameText.classList.add("hidden");
         } else {
             nameText.classList.remove("hidden");
