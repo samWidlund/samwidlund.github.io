@@ -63,7 +63,7 @@ html, body {
 }
 
 .nameHeader p {
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: bold;
 }
 
@@ -75,7 +75,7 @@ html, body {
 /* responsive */
 @media (max-width: 768px) {
     .nameHeader p {
-        font-size: 11vw;
+        font-size: 9vw;
     }
     .SAMUEL {
         transform: rotate(90deg);
@@ -90,7 +90,7 @@ html, body {
 
 @media (max-width: 480px) {
     .nameHeader p {
-        font-size: 11.2vw;
+        font-size: 9.5vw;
     }
 }
 
