@@ -125,9 +125,11 @@ html, body {
 }
 
 /* resume */
-#firstResumeContainer {
+#resumeContainer {
+    visibility:visible;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10vh;
     width: 90%;
     display: grid;
     justify-content: center;
@@ -175,9 +177,22 @@ html, body {
     justify-content: end;
 }
 
+.projectContainer {
+    visibility: visible;
+    width: 90%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(132deg, rgba(239, 239, 239, 0.94), rgba(112, 112, 112, 0.44), rgba(176, 176, 176, 0.69), rgba(214, 214, 214, 0.84), rgba(252, 252, 252, 0.99));
+    background-size: 200% 200%;
+    animation: Gradient 15s ease infinite;
+    border: 1px solid black;
+}
+
 #taskBar {
     width: 100%;
-    margin-top: 10vh;
     position: absolute;
     font-size: 1em;
     border-top: 1px solid black;
