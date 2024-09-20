@@ -124,8 +124,17 @@ html, body {
     text-decoration: underline;
 }
 
+#taskBar {
+    width: 100%;
+    position: absolute;
+    font-size: 1em;
+    border-top: 1px solid black;
+    padding-right: 1rem;
+    text-align: end;
+}
+
 /* resume */
-#resumeContainer {
+.resumeContainer {
     visibility:visible;
     margin-left: auto;
     margin-right: auto;
@@ -191,11 +200,40 @@ html, body {
     border: 1px solid black;
 }
 
-#taskBar {
-    width: 100%;
-    position: absolute;
-    font-size: 1em;
-    border-top: 1px solid black;
-    padding-right: 1rem;
-    text-align: end;
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectImage {
+    order: 2;
+    width: 40%;
+    text-align: center;
+}
+
+.projectImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.projectDescription {
+    order: 1;
+    width: 40%;
+    text-align: start;
+}
+
+@media (max-width: 768px) {
+    .contentContainer {
+        flex-direction: column;
+    }
+
+    .projectImage, .projectDescription {
+        width: 100%;
+        text-align: center;
+    }
 }
