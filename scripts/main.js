@@ -22,27 +22,12 @@ scrollDownButton.addEventListener("click", function() {
     });
 });
 
-function teaseScroll() {
+function teaseScrollButton() {
+    scrollDownButton.classList.add("shake");
+    
     setTimeout(() => {
-        window.scrollTo({
-            top: window.innerHeight/10,
-            behavior: "smooth"
-        });
-    }, 0);
-
-    setTimeout(() => {
-        window.scrollTo({
-            top: window.innerHeight/6,
-            behavior: "smooth"
-        });
-    }, 800);
-
-    setTimeout(() => {
-        window.scrollTo({
-            top: 0, // scroll back to top
-            behavior: "smooth"
-        });
-    }, 1000);
+        scrollDownButton.classList.remove("shake");
+    }, 500); // match the duration of the shake animation (0.5s)
 }
 
-setInterval(teaseScroll, 5000);
+setInterval(teaseScrollButton, 5000);
