@@ -216,7 +216,7 @@ html, body {
     padding: 0;
     cursor: pointer;
     margin-top: 75vh;
-    width: 4rem;
+    width: 3rem;
     height: auto;
 
 }
@@ -228,7 +228,6 @@ html, body {
 }
 
 #scrollDownButton:hover {
-    box-shadow: 0 4px 8px rgba(90, 89, 89, 0.1);
     cursor: pointer;
 }
 
