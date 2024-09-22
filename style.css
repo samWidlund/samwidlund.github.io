@@ -238,6 +238,6 @@ html, body {
 
     .projectImage, .projectDescription {
         width: 100%;
-        text-align: center;
+        text-align: start;
     }
 }
