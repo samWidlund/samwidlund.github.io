@@ -239,15 +239,16 @@ html, body {
     margin-top: 75vh;
     width: 3rem;
     height: auto;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-    animation-delay: 3s;
+
 }
 
 #scrollDownButton img {
     width: 100%;
     height: 100%;
     background-color: transparent;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 3s;
 }
 
 #scrollDownButton:hover {
