@@ -72,6 +72,27 @@ html, body {
     visibility: hidden;
 }
 
+.SAMUEL{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.WIDLUND{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* responsive */
 @media (max-width: 768px) {
     .nameHeader p {
@@ -218,7 +239,9 @@ html, body {
     margin-top: 75vh;
     width: 3rem;
     height: auto;
-
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 3s;
 }
 
 #scrollDownButton img {
