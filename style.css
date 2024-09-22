@@ -8,11 +8,11 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit; /* Ensure all elements use border-box sizing */
+    box-sizing: inherit; /* ensure all elements use border-box sizing */
 }
 
 @keyframes Gradient {
@@ -266,5 +266,5 @@ html, body {
 .shake {
     animation: shake 0.5s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: 1; /* animation plays once */
+    animation-iteration-count: 1;
 }
