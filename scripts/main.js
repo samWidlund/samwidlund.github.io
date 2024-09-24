@@ -29,3 +29,20 @@ function teaseScrollButton() {
 }
 
 setInterval(teaseScrollButton, 5000);
+
+    // fetch all navigateMenu links
+    document.querySelectorAll('#navigateMenu a').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault()
+            
+            // find the target container
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            // scroll to container
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        });
+    });
