@@ -1,3 +1,4 @@
+// remove name header with scroll
 window.addEventListener("load", function() {
     const nameText = document.getElementsByClassName("nameHeader")[0];
     const mainContainer = document.getElementById("mainContainer")
@@ -20,6 +21,7 @@ scrollDownButton.addEventListener("click", function() {
     });
 });
 
+// shake effect on scrollButtonDown
 function teaseScrollButton() {
     scrollDownButton.classList.add("shake");
     
@@ -29,19 +31,20 @@ function teaseScrollButton() {
 }
 
 setInterval(teaseScrollButton, 5000);
-    // fetch all navigateMenu links
-    document.querySelectorAll('#navigateMenu a').forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault()
-            
-            // find the target container
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
 
-            // scroll to container
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'center'
-            });
+// fetch all navigateMenu links
+document.querySelectorAll('#navigateMenu a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault()
+        
+        // find the target container
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        // scroll to container
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
         });
     });
+});
