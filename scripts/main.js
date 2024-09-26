@@ -29,7 +29,6 @@ function teaseScrollButton() {
 }
 
 setInterval(teaseScrollButton, 5000);
-
     // fetch all navigateMenu links
     document.querySelectorAll('#navigateMenu a').forEach(link => {
         link.addEventListener('click', function(event) {
