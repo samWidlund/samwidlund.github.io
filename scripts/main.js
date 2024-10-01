@@ -15,13 +15,15 @@ window.addEventListener("load", function() {
 
 const scrollDownButton = document.getElementById("scrollDownButton");
 scrollDownButton.addEventListener("click", function() {
-    window.scrollTo({
-        top: window.innerHeight,
-        behavior: "smooth"
+
+    // scroll to navigateMenu
+    const navigateMenu = document.getElementById("navigateMenu");
+    navigateMenu.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
     });
 });
 
-// shake effect on scrollButtonDown
 function teaseScrollButton() {
     scrollDownButton.classList.add("shake");
     
