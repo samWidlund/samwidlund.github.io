@@ -52,14 +52,34 @@ html, body {
 }
 
 .nameHeader {
-    position: fixed;
+    /* position: fixed;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: 1;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    /* transition: opacity 0.5s ease, visibility 0.5s ease; */
     z-index: 1;
+
+    /* typeWriterEffect */
+
+    border-right: solid 3px black;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:
+        type 2s steps(10) 1s forwards,
+        blink 0.5s steps(1) infinite;
+}
+
+@keyframes type {
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    50% { border-color: black; }
+    to { border-color: transparent; }
 }
 
 .nameHeader p {
