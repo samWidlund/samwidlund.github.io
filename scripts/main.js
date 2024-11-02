@@ -50,3 +50,26 @@ document.querySelectorAll('#navigateMenu a').forEach(link => {
         });
     });
 });
+
+// flipCard resume-projects
+const projectsHeader = document.getElementsByClassName("projectsHeader")[0];
+const resumeContainer = document.getElementById("resumeContainer");
+
+const resumeHeader = document.getElementsByClassName("resumeHeader")[0];
+const projectsContainer = document.getElementById("projectsContainer");
+
+projectsHeader.addEventListener("click", function () {
+    resumeHeader.classList.remove("underlineElement");
+    projectsContainer.classList.remove("hideElement");
+
+    projectsHeader.classList.add("underlineElement");
+    resumeContainer.classList.add("hideElement");
+})
+
+resumeHeader.addEventListener("click", function () {
+    projectsHeader.classList.remove("underlineElement");
+    resumeContainer.classList.remove("hideElement");
+
+    resumeHeader.classList.add("underlineElement");
+    projectsContainer.classList.add("hideElement");
+})
