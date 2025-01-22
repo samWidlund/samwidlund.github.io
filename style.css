@@ -31,7 +31,7 @@ html, body {
 
 #mainContainerBackground {
     width: 100%;
-    height: 100lvh;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
