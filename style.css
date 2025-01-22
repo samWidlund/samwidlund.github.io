@@ -42,7 +42,7 @@ html, body {
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 90vh;
+    height: 90dvh;
     z-index: 0;
     background: linear-gradient(132deg, rgba(239, 239, 239, 94), rgba(112, 112, 112, 44), rgba(176, 176, 176, 69), rgba(214, 214, 214, 84), rgba(252, 252, 252, 99));
     background-size: 200% 200%;
