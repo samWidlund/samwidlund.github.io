@@ -271,3 +271,10 @@ html, body {
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
 }
+
+/* safari adjustment */
+@supports (-webkit-appearance: none) {
+    #scrollDownButton {
+        margin-top: calc(100vh - 20vh); /* Safari-specifik justering */
+    }
+}
