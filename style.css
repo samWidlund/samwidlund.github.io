@@ -278,3 +278,9 @@ html, body {
         margin-top: calc(100vh - 20vh); /* Safari-specifik justering */
     }
 }
+
+@supports not (height: 1dvh) {
+    #scrollDownButton {
+        margin-top: 75vh;
+    }
+}
