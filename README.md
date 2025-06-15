@@ -1,5 +1,5 @@
-# Portfolio for Samuel Widlund
+## Portfolio for Samuel Widlund
 
-# Backlog
+## Backlog
 - implement samuel W logo
 - fix safari resulotion
