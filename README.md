@@ -1,4 +1,4 @@
-## Portfolio
+# Portfolio
 
 ## Backlog
 - implement samuel W logo
