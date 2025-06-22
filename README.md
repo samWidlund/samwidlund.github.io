@@ -1,4 +1,4 @@
-## Portfolio for Samuel Widlund
+## Portfolio
 
 ## Backlog
 - implement samuel W logo
