@@ -5,4 +5,4 @@
     - hand write n vectorise?
     - replace SAMUEL with samuel?
     - slidein SAMUEL with fadein W
-- fix safari resulotion
+- fix safari resolution/arrow margin bug
