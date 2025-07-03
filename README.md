@@ -2,6 +2,7 @@
 
 ## Backlog
 - implement samuel W logo
+    - replace SAMUEL with samuel?
     - slidein SAMUEL with fadein W
 - fix safari resulotion
 - add .gitignore
