@@ -16,7 +16,9 @@
   },
   "homepage": "https://github.com/samWidlund/samwidlund.github.io#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.11",
+    "@tailwindcss/cli": "^4.1.11"
+  },
+  "devDependencies": {
     "tailwindcss": "^4.1.11"
   }
 }
