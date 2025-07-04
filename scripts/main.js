@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
         setTimeout(() => {
             samuelText.classList.remove('-translate-x-full', 'opacity-0');
             samuelText.classList.add('translate-x-0', 'opacity-100');
-        }, 500);
+        }, 900);
     }
 });
 
