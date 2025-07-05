@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Megadeth';
+  src: url('./fonts/Megadeth.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.megadeth-text {
+  font-family: 'Megadeth', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
