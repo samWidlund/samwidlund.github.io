@@ -6,3 +6,4 @@
   - hand write n vectorise?
 - fix safari resolution/arrow margin bug
 - fix bold and headers missing with tailwind
+- add completed and upcoming running races?
