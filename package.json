@@ -1,0 +1,24 @@
+{
+  "name": "samwidlund.github.io",
+  "version": "1.0.0",
+  "description": "- implement samuel W logo\r - fix safari resulotion\r - add .gitignore\r - hand write name n vectorise to image?",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samWidlund/samwidlund.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samWidlund/samwidlund.github.io/issues"
+  },
+  "homepage": "https://github.com/samWidlund/samwidlund.github.io#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.11"
+  }
+}

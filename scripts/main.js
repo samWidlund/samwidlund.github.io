@@ -1,3 +1,21 @@
+// fade + slidein header
+window.addEventListener('load', () => {
+    const wLetter = document.getElementById('wLetter');
+    const samuelText = document.getElementById('samuelText');
+    
+    if (wLetter && samuelText) {
+        setTimeout(() => {
+            wLetter.classList.remove('-translate-x-full', 'opacity-0');
+            wLetter.classList.add('translate-x-0', 'opacity-100');
+        }, 300);
+        
+        setTimeout(() => {
+            samuelText.classList.remove('-translate-x-full', 'opacity-0');
+            samuelText.classList.add('translate-x-0', 'opacity-100');
+        }, 900);
+    }
+});
+
 // remove name header with scroll
 window.addEventListener("load", function() {
     const nameText = document.getElementsByClassName("nameHeader")[0];

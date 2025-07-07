@@ -1,3 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Megadeth';
+  src: url('./fonts/Megadeth.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.megadeth-text {
+  font-family: 'Megadeth', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -53,9 +66,8 @@ html, body {
 
 .nameHeader {
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: 1;
     transition: opacity 0.5s ease, visibility 0.5s ease;
@@ -142,6 +154,15 @@ html, body {
 }
 
 #navigateMenu a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: underline;
 }
 

@@ -1,7 +1,9 @@
 # Portfolio
 
 ## Backlog
+
 - implement samuel W logo
-- fix safari resulotion
-- add .gitignore
-- hand write name n vectorise to image?
+  - hand write n vectorise?
+- fix safari resolution/arrow margin bug
+- fix bold and headers missing with tailwind
+- add completed and upcoming running races?

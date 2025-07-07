@@ -1,0 +1,27 @@
+# os
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+logs/
+
+# temp files
+*.tmp
+*.temp
+
+# node
+node_modules/
+
+# build / dist folders
+dist/
+build/
+out/
+
+# env files
+.env
+.env.local
+.env.production
+
+# vim
+*.sw?

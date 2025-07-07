@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/swfaviconwhite.png">
-    <title>Portfolio</title>
+    <title>Portfolio</title>    
+    
+    <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta property="og:image" content="https://samuelwidlund.com/images/portfolioImg.png" />
@@ -14,18 +16,13 @@
 
     <div id="mainContainerBackground">
         <div id="mainContainer">
-            <div class="nameHeader">
-                 <p>
-                    <div class="SAMUEL">
-                        <p>SAMUEL</p>
-                    </div>
-                    <div>
-                        <p>&nbsp;</p> <!-- space between names -->
-                    </div>
-                    <div class="WIDLUND">
-                        <p>WIDLUND</p>
-                    </div>
-                 </p>
+            <div class="nameHeader grid place-items-center">
+                <div id="wLetter" class="megadeth-text text-gray-300 text-[20vw] col-start-1 row-start-1 z-10 transform -translate-x-full opacity-0 transition-all duration-1000 ease-in-out">
+                    W
+                </div>
+                <div id="samuelText" class="text-black text-[12vw] col-start-1 row-start-1 z-20 font-bold transform -translate-x-full opacity-0 transition-all duration-1000 ease-in-out">
+                    SAMUEL
+                </div>
             </div>
             <button id="scrollDownButton">
                 <img src="images/downArrow.png" alt="downArrow.png">
@@ -45,55 +42,65 @@
 
         <div class="infoContainer" id="RESUME">
             <div class="rowContainer">
-                <h2>ABOUT</h2>
+                <h2 class="text-4xl font-bold">ABOUT</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
                 <p>
-                    hello! I'm <strong>Samuel</strong>.
+                    hello! I'm <strong class="megadeth-text">S</strong><strong>amuel</strong> <i class="megadeth-text">W</i>idlund.
                     <br>
-                    21 years old from Uppsala, Sweden with a keen interest in software development, testing and design. 
+                    diploma in software engineering. based in Uppsala, Sweden with a keen interest in software development, testing and design. 
                     <br> 
-                    in addition, I spend my free time engaging in ultrarunning aswell as reselling clothing.
+                    in addition, I spend my free time engaging in ultrarunning aswell as reselling clothing. currently training for kia fjällmaraton 100k.
                 </p>
             </div>
         </div>
 
         <div class="infoContainer" id="QUALIFICATION">
             <div class="rowContainer">
-                <h2>EDUCATION</h2>
+                <h2 class="text-4xl font-bold">EDUCATION</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
                 <p>-&nbsp;upper secondary school engineer. programming & design <br> <i>NTI Gymnasiet Uppsala</i> <br> (aug&nbsp;2023&nbsp;-&nbsp;jun&nbsp;2024)</p>
+                <br>
                 <p>-&nbsp;informationtechnology. 10 hp, basics about system & computers<br> <i>Uppsala Universitet</i> <br> (aug&nbsp;2023&nbsp;-&nbsp;dec&nbsp;2024)</p>
+                <br>
                 <p>-&nbsp;technology program. engineering/technical science <br> <i>NTI Gymnasiet Uppsala</i>  <br> (aug&nbsp;2020&nbsp;-&nbsp;jun&nbsp;2023)</p>
             </div>
         </div>
 
         <div class="infoContainer" id="EXPERIENCE">
             <div class="rowContainer">
-                <h2>EXPERIENCE</h2>
+                <h2 class="text-4xl font-bold">EXPERIENCE</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
                 <p>-&nbsp;process operator<br> <i>Fresenius Kabi Uppsala</i> <br> (may&nbsp;2025&nbsp;-&nbsp;<strong>current</strong>)</p>
+                <br>
                 <p>-&nbsp;consultant<br> <i>Randstad Uppsala</i> <br> (may&nbsp;2025&nbsp;-&nbsp;<strong>current</strong>)</p>
+                <br>                
                 <p>-&nbsp;self-driven e-commerce, resale of selected outdoor & designer clothing<br> <i>garderoben.w</i> <br> (may&nbsp;2022&nbsp;-&nbsp;<strong>current</strong>)</p>
+                <br>                
                 <p>-&nbsp;reconciliation agent<br> <i>Etraveli Group</i> <br> (sep&nbsp;2024&nbsp;-&nbsp;dec&nbsp;2024)</p>
+                <br>                
                 <p>-&nbsp;tire change, customer service & freight truck driving <br> <i>Bildemo Uppsala</i> <br> (spring&nbsp;2024,&nbsp;autumn&nbsp;2023&nbsp;&&nbsp;2024)</p>
+                <br>                
                 <p>-&nbsp;devops, automated software testing & manual testing <br> <i>Cytiva Uppsala</i> <br> (feb&nbsp;2024&nbsp;-&nbsp;aug&nbsp;2024)</p>
+                <br>
                 <p>-&nbsp;warehouse management & cleaning <br> <i>Lundagrossisten Uppsala Norr</i> <br> (summer&nbsp;2020,&nbsp2021&nbsp;&&nbsp;2023, christmas&nbsp;2022&nbsp;&&nbsp;2023)</p>
             </div>
         </div>
         
         <div class="infoContainer" id="CODING">
             <div class="rowContainer">
-                    <h2>SKILLS</h2>
+                    <h2 class="text-4xl font-bold"> TECHNICAL SKILLS</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
 
-                    <h3>web</h3>
-                    <p>-&nbsp;tailwindcss</p>
+                    <h3 class="text-2xl font-bold mb-4">web</h3 class="text-2xl font-bold mb-4">
+                    <p>-&nbsp;tailwind css</p>
                     <p>-&nbsp;javascript</p>
+                    <p>-&nbsp;typescript</p>
+                    <p>-&nbsp;express.js</p>
                     <p>-&nbsp;bootstrap</p>
-                    <p>-&nbsp;express</p>
-                    <p>-&nbsp;react</p>
+                    <p>-&nbsp;react.js</p>
+                    <p>-&nbsp;node.js</p>
                     <p>-&nbsp;html</p>
                     <p>-&nbsp;css</p>
 
                     <br>
 
-                    <h3>coding</h3>
+                    <h3 class="text-2xl font-bold mb-4">coding</h3 class="text-2xl font-bold mb-4">
                     <p>-&nbsp;vbscript</p>
                     <p>-&nbsp;python</p>
                     <p>-&nbsp;sqlite</p>
@@ -101,19 +108,19 @@
                     <p>-&nbsp;c#</p>
                     <br>
 
-                    <h3>testing</h3>
+                    <h3 class="text-2xl font-bold mb-4">testing</h3 class="text-2xl font-bold mb-4">
                     <p>-&nbsp;selenium</p>
                     <p>-&nbsp;flaui</p>
                     <br>
 
-                    <h3>devops</h3>
+                    <h3 class="text-2xl font-bold mb-4">devops</h3 class="text-2xl font-bold mb-4">
                     <p>-&nbsp;powershell</p>
                     <p>-&nbsp;pipelines</p>
                     <p>-&nbsp;azure</p>
                     <p>-&nbsp;yaml</p>
                     <br>
                     
-                    <h3>other</h3>
+                    <h3 class="text-2xl font-bold mb-4">other</h3 class="text-2xl font-bold mb-4">
                     <p>-&nbsp;windows</p>
                     <p>-&nbsp;scrum</p>
                     <p>-&nbsp;linux</p>
@@ -124,7 +131,7 @@
 
         <div class="infoContainer" id="CONTACT">
             <div class="rowContainer">
-                <h2>CONTACT</h2>
+                <h2 class="text-4xl font-bold">CONTACT</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
                 <p>-&nbsp;<a href="https://www.linkedin.com/in/samuel-widlund-388202290/">linkedin</a></p>
                 <p>-&nbsp;<a href="https://github.com/samWidlund">github</a></p>
                 <p>-&nbsp;<a href="mailto:sam.wid415@gmail.co">mail</a></p>
@@ -133,7 +140,7 @@
 
         <div class="infoContainer" id="REFERENCE">
             <div class="rowContainer">
-                <h2>REFERENCE</h2>
+                <h2 class="text-4xl font-bold">REFERENCE</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
                 <p>given upon request</p>
             </div>
         </div>
@@ -146,7 +153,7 @@
         <!-- garderobenw -->
         <div class="infoContainer">
             <div class="rowContainer" id="PROJECTS">
-                <h2>PROJECTS</h2>
+                <h2 class="text-4xl font-bold">PROJECTS</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
                 <br>
                 
                 <div class="contentContainer">
@@ -154,7 +161,7 @@
                         <img src="images/garderobenwInstagram.jpg" alt="garderobenwInstagram.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>garderoben.w (wip)</h3>
+                        <h3 class="text-2xl font-bold mb-4">garderoben.w (live)</h3 class="text-2xl font-bold mb-4">
                         <p>resale of curated outdoor & designer garments</p>
                         <p>-&nbsp;<a href="https://www.instagram.com/garderoben.w">instagram</a></p>
                         <p>-&nbsp;<a href="https://www.tiktok.com/@garderoben.w">tiktok</a></p>
@@ -172,7 +179,7 @@
                         <img src="images/wordTool.png" alt="wordTool.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>linux terminal wordTool</h3>
+                        <h3 class="text-2xl font-bold mb-4">linux terminal wordTool</h3 class="text-2xl font-bold mb-4">
                         <p>Shell</p>
                         <p>Python</p>
                         <p>Thesaurus & Dictionary API</p>
@@ -190,7 +197,7 @@
                         <img src="images/todolistWebProject.jpg" alt="todolistWebProject.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>web to-do list</h3>
+                        <h3 class="text-2xl font-bold mb-4">web to-do list</h3 class="text-2xl font-bold mb-4">
                         <p>HTML, CSS & JavaScript</p>
                         <p>-&nbsp;<a href="https://samwidlund.github.io/todolistWeb/">live server</a></p>
                         <p>-&nbsp;<a href="https://github.com/samWidlund/todolistWeb">github</a></p>
@@ -207,7 +214,7 @@
                         <img src="images/dotnetTodoList.png" alt="dotnetTodoList.png">
                     </div>
                     <div class="projectDescription">
-                        <h3>dotnet to-do list</h3>
+                        <h3 class="text-2xl font-bold mb-4">dotnet to-do list</h3 class="text-2xl font-bold mb-4">
                         <p>.NET MAUI</p>
                         <p>C#</p>
                         <p>-&nbsp;<a href="https://github.com/samWidlund/todolistDotnetMAUI">github</a></p>
@@ -224,7 +231,7 @@
                         <img src="images/jewelryShopTemplate.jpg" alt="jewelryShopTemplate.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>web jewelry shop template</h3>
+                        <h3 class="text-2xl font-bold mb-4">web jewelry shop template</h3 class="text-2xl font-bold mb-4">
                         <p>HTML, CSS & JavaScript</p>
                         <p>-&nbsp;<a href="https://samwidlund.github.io/jewelryShopTemplate">live server</a></p>
                         <p>-&nbsp;<a href="https://github.com/samWidlund/jewelryShopTemplate">github</a></p>
@@ -241,7 +248,7 @@
                         <img src="images/calculatorWebProject.jpg" alt="calculatorWebProject.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>web calculator</h3>
+                        <h3 class="text-2xl font-bold mb-4">web calculator</h3 class="text-2xl font-bold mb-4">
                         <p>HTML, CSS & JavaScript</p>
                         <p>-&nbsp;<a href="https://samwidlund.github.io/calculatorWeb/">live server</a></p>
                         <p>-&nbsp;<a href="https://github.com/samWidlund/calculatorWeb">github</a></p>
@@ -258,7 +265,7 @@
                         <img src="images/garderobenwTemplate.jpg" alt="garderobenwTemplate.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>web garderoben.w shop template</h3>
+                        <h3 class="text-2xl font-bold mb-4">web garderoben.w shop template</h3 class="text-2xl font-bold mb-4">
                         <p>HTML, CSS & Bootstrap</p>
                         <p>-&nbsp;<a href="https://samwidlund.github.io/garderobenwTemplate">live server</a></p>
                         <p>-&nbsp;<a href="https://github.com/samWidlund/garderobenwTemplate">github</a></p>
@@ -275,7 +282,7 @@
                         <img src="images/bussMonitoWebProject.jpg" alt="bussMonitoWebProject.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>buss schedule monitor</h3>
+                        <h3 class="text-2xl font-bold mb-4">buss schedule monitor</h3 class="text-2xl font-bold mb-4">
                         <p>HTML, CSS & JS&nbsp;sqlite</p>
                         <p>fetching live data from ul and gtfs API</p>
                         <p>-&nbsp;<a href="https://github.com/NTIG-Uppsala/bus-schedule-remastered">github</a></p>
@@ -292,7 +299,7 @@
                         <img src="images/blaklintenWebProject.png" alt="blaklintenWebProject.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>web florist blåklinten</h3>
+                        <h3 class="text-2xl font-bold mb-4">web florist blåklinten</h3 class="text-2xl font-bold mb-4">
                         <p>HTML, CSS, & SCSS</p>
                         <p>Bootstrap, JavaScript & Typescript</p>
                         <p>Python & Selenium testing</p>
@@ -311,7 +318,7 @@
                         <img src="images/ntbBiluthyrningWebProject.png" alt="ntbBiluthyrningWebProject.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>web ntb biluthyrning</h3>
+                        <h3 class="text-2xl font-bold mb-4">web ntb biluthyrning</h3 class="text-2xl font-bold mb-4">
                         <p>HTML, CSS, & SCSS</p>
                         <p>Bootstrap & JavaScript</p>
                         <p>Python & Selenium testing</p>
@@ -330,7 +337,7 @@
                         <img src="images/gaAlarmClockProject.jpg" alt="gaAlarmClockProject.jpg">
                     </div>
                     <div class="projectDescription">
-                        <h3>math challenge alarm</h3>
+                        <h3 class="text-2xl font-bold mb-4">math challenge alarm</h3 class="text-2xl font-bold mb-4">
                         <p>Highschool work</p>
                         <p>Python & Rasperry Pi 3</p>
                         <p>-&nbsp;<a href="https://github.com/samWidlund/mathAlarmClock">github</a></p>
@@ -344,8 +351,8 @@
     <div class="resumeContainer">
         <div class="infoContainer" id="EXTRA">
             <div class="rowContainer">
-                <h2>EXTRA</h2>
-                <p>-&nbsp;created using css & javascript</p>
+                <h2 class="text-4xl font-bold">EXTRA</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
+                <p>-&nbsp;built with vanilla javascript, css & tailwind css</p>
                 <p>-&nbsp;do not hesitate to contact me, <strong>always</strong> open for work!</p>
             </div>
         </div>
