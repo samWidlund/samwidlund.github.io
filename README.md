@@ -8,3 +8,4 @@
 - upd og:image to new start style
 - add completed and upcoming running races?
 - fix header delay? tailwind delay?
+- SAMUEL not Y centered over W in start?
