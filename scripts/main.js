@@ -68,3 +68,14 @@ document.querySelectorAll('#navigateMenu a').forEach(link => {
         });
     });
 });
+
+// projects styling
+function showTabContent(tabId) {
+    const tabs = document.querySelectorAll('.tabContent');
+    const buttons = document.querySelectorAll('.tabButton');
+    tabs.forEach(tab => tab.style.display = 'none');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.getElementById(tabId).style.display = 'block';
+    const idx = ['tabWeb','tabDotnet','tabOther'].indexOf(tabId);
+    if (idx !== -1) buttons[idx].classList.add('active');
+}
