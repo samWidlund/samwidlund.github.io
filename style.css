@@ -293,10 +293,14 @@ a:hover {
     animation-iteration-count: 1;
 }
 
-.tabButton:hover
-{
+.tabButton:hover {
     text-decoration: underline;
-    cursor:pointer;
+    cursor: pointer;
+}
+
+.tabButton:active {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* safari adjustment */

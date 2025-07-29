@@ -149,74 +149,66 @@
 
     <!-- Example with Tabs -->
     <div class="resumeContainer">
-        <div class="infoContainer">
+            <div class="infoContainer">
+                <div class="rowContainer">
+                    <h2 class="text-4xl font-bold">PROJECTS</h2 class="text-4xl font-bold mb-4" class="text-2xl font-bold mb-4">
+                        <br>
 
-            <div class="rowContainer">
-                <h2 class="text-4xl font-bold mb-4">PROJECTS</h2>
+                        <div style="display: flex; flex-direction: row; gap: 2rem; align-items: flex-start;">
+                            <div class="tabContainer" style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; max-width: 200px;">
+                                <button class="tabButton" onclick="showTabContent('tabWeb')">Web</button>
+                                <button class="tabButton" onclick="showTabContent('tabDotnet')">.NET</button>
+                                <button class="tabButton" onclick="showTabContent('tabOther')">Övrigt</button>
+                            </div>
+                            <div style="flex: 1;">
+                                <div id="tabWeb" class="tabContent" style="display: block;">
+                                    <h3 class="text-xl font-bold mb-2">Webbprojekt</h3>
+                                    <ul class="list-disc ml-6">
+                                        <li>
+                                            <strong>Portfolio Website</strong><br>
+                                            HTML, CSS, JavaScript<br>
+                                            <a href="#">View Project</a>
+                                        </li>
+                                        <li>
+                                            <strong>Web To-Do List</strong><br>
+                                            HTML, CSS, JavaScript<br>
+                                            <a href="https://samwidlund.github.io/todolistWeb/">Live</a> |
+                                            <a href="https://github.com/samWidlund/todolistWeb">GitHub</a>
+                                        </li>
+                                        <li>
+                                            <strong>Jewelry Shop Template</strong><br>
+                                            HTML, CSS, JavaScript<br>
+                                            <a href="https://samwidlund.github.io/jewelryShopTemplate">Live</a> |
+                                            <a href="https://github.com/samWidlund/jewelryShopTemplate">GitHub</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tabDotnet" class="tabContent" style="display: none;">
+                                    <h3 class="text-xl font-bold mb-2">.NET-projekt</h3>
+                                    <ul class="list-disc ml-6">
+                                        <li>
+                                            <strong>Dotnet To-Do List</strong><br>
+                                            .NET MAUI, C#<br>
+                                            <a href="https://github.com/samWidlund/todolistDotnetMAUI">GitHub</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tabOther" class="tabContent" style="display: none;">
+                                    <h3 class="text-xl font-bold mb-2">Övriga projekt</h3>
+                                    <ul class="list-disc ml-6">
+                                        <li>
+                                            <strong>Linux Terminal WordTool</strong><br>
+                                            Python, Shell<br>
+                                            <a href="https://github.com/samWidlund/wordTool">GitHub</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="rowContainer">
-                <div class="tabContainer" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
-                    <button class="tabButton" onclick="showTabContent('tabWeb')">Web</button>
-                    <button class="tabButton" onclick="showTabContent('tabDotnet')">.NET</button>
-                    <button class="tabButton" onclick="showTabContent('tabOther')">Övrigt</button>
-                </div>
-                <div id="tabWeb" class="tabContent" style="display: block;">
-                    <h3 class="text-xl font-bold mb-2">Webbprojekt</h3>
-                    <ul class="list-disc ml-6">
-                        <li>
-                            <strong>Portfolio Website</strong><br>
-                            HTML, CSS, JavaScript<br>
-                            <a href="#">View Project</a>
-                        </li>
-                        <li>
-                            <strong>Web To-Do List</strong><br>
-                            HTML, CSS, JavaScript<br>
-                            <a href="https://samwidlund.github.io/todolistWeb/">Live</a> |
-                            <a href="https://github.com/samWidlund/todolistWeb">GitHub</a>
-                        </li>
-                        <li>
-                            <strong>Jewelry Shop Template</strong><br>
-                            HTML, CSS, JavaScript<br>
-                            <a href="https://samwidlund.github.io/jewelryShopTemplate">Live</a> |
-                            <a href="https://github.com/samWidlund/jewelryShopTemplate">GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="tabDotnet" class="tabContent" style="display: none;">
-                    <h3 class="text-xl font-bold mb-2">.NET-projekt</h3>
-                    <ul class="list-disc ml-6">
-                        <li>
-                            <strong>Dotnet To-Do List</strong><br>
-                            .NET MAUI, C#<br>
-                            <a href="https://github.com/samWidlund/todolistDotnetMAUI">GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="tabOther" class="tabContent" style="display: none;">
-                    <h3 class="text-xl font-bold mb-2">Övriga projekt</h3>
-                    <ul class="list-disc ml-6">
-                        <li>
-                            <strong>Linux Terminal WordTool</strong><br>
-                            Python, Shell<br>
-                            <a href="https://github.com/samWidlund/wordTool">GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
-    <script>
-        function showTabContent(tabId) {
-            const tabs = document.querySelectorAll('.tabContent');
-            const buttons = document.querySelectorAll('.tabButton');
-            tabs.forEach(tab => tab.style.display = 'none');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            document.getElementById(tabId).style.display = 'block';
-            const idx = ['tabWeb','tabDotnet','tabOther'].indexOf(tabId);
-            if (idx !== -1) buttons[idx].classList.add('active');
-        }
-    </script>
 
     <!-- projects -->
     <div class="resumeContainer">
