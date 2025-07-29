@@ -293,6 +293,12 @@ a:hover {
     animation-iteration-count: 1;
 }
 
+.tabButton:hover
+{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
 /* safari adjustment */
 @supports (-webkit-appearance: none) {
     #scrollDownButton {
