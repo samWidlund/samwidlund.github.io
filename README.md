@@ -9,3 +9,5 @@
 - add completed and upcoming running races?
 - fix header delay? tailwind delay?
 - SAMUEL not Y centered over W in start?
+- update project list
+- remove resume container n replace with pdf?
