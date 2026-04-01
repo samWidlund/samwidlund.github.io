@@ -2,7 +2,7 @@ import { Typewriter } from './components/Typewriter'
 
 export default function App() {
     return (
-      <div className="min-h-screen bg-[#0B0B0B] flex items-center">
+      <div className="min-h-screen bg-[#0B0B0B] flex">
         <div className="w-full flex justify-between items-center p-5">
             <h1 className="text-2xl text-[#39FF14]">
               <Typewriter text="~/portfolio" />
