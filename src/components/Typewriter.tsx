@@ -8,6 +8,7 @@ interface TypewriterProps {
 
 export function Typewriter({ text, speed = 110, className = '' }: TypewriterProps) {
   const [displayed, setDisplayed] = useState('')
+  const [done, setDone] = useState(false)
 
   useEffect(() => {
     let i = 0
@@ -16,11 +17,17 @@ export function Typewriter({ text, speed = 110, className = '' }: TypewriterProp
         setDisplayed(text.slice(0, i + 1))
         i++
       } else {
+        setDone(true)
         clearInterval(interval)
       }
     }, speed)
     return () => clearInterval(interval)
   }, [text, speed])
 
-  return <span className={className}>{displayed}</span>
+  return (
+    <span className={className}>
+      {displayed}
+      {done && <span className="animate-blink">_</span>}
+    </span>
+  )
 }
