@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+  background-color: #0B0B0B;
+}
+
 @keyframes slideIn {
   from {
     opacity: 0;
