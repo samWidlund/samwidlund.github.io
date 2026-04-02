@@ -3,7 +3,7 @@ import { Typewriter } from './components/Typewriter'
 export default function App() {
     return (
       <div className="min-h-screen flex flex-col justify-center">
-        <div className="absolute top-0 w-full flex p-2 justify-center text-white text-sm bg-[rgba(30,30,30,0.85)] font-mono backdrop-blur-sm">
+        <div className="absolute top-0 w-full flex p-2 justify-center text-white text-sm bg-[rgba(30,30,30,0.85)] backdrop-blur-sm">
           ultra@runner: ~/coding/clothing/design
         </div>
         <div className="w-full flex justify-between items-center p-5">
