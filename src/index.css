@@ -30,10 +30,19 @@
   51%, 100% { opacity: 0; }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .animate-slide-in {
   animation: slideIn 1s ease-out forwards;
 }
 
 .animate-blink {
   animation: blink 1s step-end infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.15s ease-out forwards;
 }

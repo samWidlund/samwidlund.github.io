@@ -22,15 +22,16 @@ const FileSystemItem: FC<FileSystemItemProps> = ({ type, name, onClick }) => {
 
 interface FileSystemProps {
   currentPath: string
+  onCommand?: (cmd: string) => void
 }
 
-export const FileSystem: FC<FileSystemProps> = ({ currentPath }) => {
+export const FileSystem: FC<FileSystemProps> = ({ currentPath, onCommand }) => {
   return (
     <div className="text-[#39FF14] font-mono text-base">
       {currentPath === '~' && (
         <>
           <FileSystemItem type="directory" name="projects/" />
-          <FileSystemItem type="command" name="experience" />
+          <FileSystemItem type="command" name="experience" onClick={() => onCommand?.('experience log')} />
           <FileSystemItem type="file" name="about.txt" />
         </>
       )}
