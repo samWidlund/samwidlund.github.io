@@ -28,22 +28,23 @@ export default function App() {
                   cursor={false} 
                   onComplete={handleComplete} 
                 />
-                <span className="text-[#39FF14] text-sm flex items-center gap-1 ml-1">
-                  {showArrow && <span className="animate-fade-in">➜</span>}
-                  {showCursor && <span className="animate-blink">_</span>}
-                </span>
               </h1>
-              {command && (
-                <span className="text-[#39FF14] text-sm flex items-center gap-1">
-                  <span>➜</span>
-                  <span>experience log</span>
-                </span>
-              )}
+              <span className="text-base text-[#39FF14] flex items-center gap-1">
+                {showArrow && <span className="animate-fade-in">➜</span>}
+                {command && <span className="animate-fade-in">$ {command}</span>}
+                {showCursor && <span className="animate-blink">_</span>}
+              </span>
               <h1 className="text-2xl font-bold text-[#39FF14] animate-slide-in self-end">samuel Widlund</h1>
           </div>
         </div>
         <div className="p-5">
-          <FileSystem currentPath={currentPath} onCommand={setCommand} />
+          <FileSystem 
+            currentPath={currentPath} 
+            onCommand={(cmd) => {
+              setCommand(cmd)
+              setShowCursor(true)
+            }} 
+          />
         </div>
       </div>
       <div className="p-5 pt-0">
