@@ -4,3 +4,4 @@
 - use variables to display certain values with eg $ = [] {}
 - use help do display things
 - use "ls" command to display projects, each project has own folder
+- https instead of http?
