@@ -4,6 +4,13 @@
   html, body {
     @apply bg-[#0B0B0B];
     -webkit-text-size-adjust: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
   }
 }
 
