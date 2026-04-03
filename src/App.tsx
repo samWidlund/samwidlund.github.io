@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Typewriter } from './components/Typewriter'
 import { FileSystem } from './components/FileSystem'
+import { GitLog } from './components/GitLog'
 
 export default function App() {
   const [currentPath] = useState('~')
@@ -22,6 +23,9 @@ export default function App() {
         <div className="p-5">
           <FileSystem currentPath={currentPath} />
         </div>
+      </div>
+      <div className="p-5 pt-0">
+        <GitLog />
       </div>
     </div>
   );
