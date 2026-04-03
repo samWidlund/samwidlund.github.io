@@ -1,20 +1,20 @@
 import type { FC } from 'react'
 
 interface FileSystemItemProps {
-  type: 'directory' | 'file'
+  type: 'directory' | 'file' | 'command'
   name: string
   onClick?: () => void
 }
 
 const FileSystemItem: FC<FileSystemItemProps> = ({ type, name, onClick }) => {
-  const permissions = type === 'directory' ? 'drwxr-xr-x' : '-rw-r--r--'
+  const icon = type === 'directory' ? '[~]' : type === 'command' ? '[>]' : '[-]'
 
   return (
     <div
       onClick={onClick}
       className="flex gap-2 hover:bg-[rgba(57,255,20,0.1)] cursor-pointer p-1 transition-colors"
     >
-      <span className="opacity-70 select-none">{permissions}</span>
+      <span className="select-none">{icon}</span>
       <span>{name}</span>
     </div>
   )
@@ -30,7 +30,7 @@ export const FileSystem: FC<FileSystemProps> = ({ currentPath }) => {
       {currentPath === '~' && (
         <>
           <FileSystemItem type="directory" name="projects/" />
-          <FileSystemItem type="file" name="$ experience" />
+          <FileSystemItem type="command" name="experience" />
           <FileSystemItem type="file" name="about.txt" />
         </>
       )}
