@@ -30,7 +30,7 @@ export const FileSystem: FC<FileSystemProps> = ({ currentPath }) => {
       {currentPath === '~' && (
         <>
           <FileSystemItem type="directory" name="projects/" />
-          <FileSystemItem type="directory" name="experience/" />
+          <FileSystemItem type="file" name="$ experience" />
           <FileSystemItem type="file" name="about.txt" />
         </>
       )}
