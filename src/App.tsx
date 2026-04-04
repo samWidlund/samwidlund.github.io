@@ -21,7 +21,7 @@ export default function App() {
             ultra@runner: ~/coding/clothing/design
         </div>
         <div className="flex-1 flex flex-col justify-center">
-          <div className="w-full flex flex-col justify-between p-5 gap-2">
+          <div className="w-full h-42 flex flex-col justify-between p-5 gap-2">
               <h1 className="text-base text-[#39FF14]">
                 <Typewriter 
                   text="~/portfolio" 
@@ -29,11 +29,11 @@ export default function App() {
                   onComplete={handleComplete} 
                 />
               </h1>
-              <span className="text-base text-[#39FF14] flex items-center gap-1">
-                {showArrow && <span className="animate-fade-in">$ </span>}
-                {command && <span className="animate-fade-in"> {command}</span>}
-                {showCursor && <span className="animate-blink">_</span>}
-              </span>
+                <span className="text-base text-[#39FF14] flex items-center gap-1">
+                  {showArrow && <span className="animate-fade-in">$ </span>}
+                  {command && <span className="animate-fade-in"> {command}</span>}
+                  {showCursor && <span className="animate-blink">_</span>}
+                </span>
               <h1 className="text-2xl font-bold text-[#39FF14] animate-slide-in self-end">samuel Widlund</h1>
           </div>
         </div>
