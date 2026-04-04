@@ -30,8 +30,8 @@ export default function App() {
                 />
               </h1>
               <span className="text-base text-[#39FF14] flex items-center gap-1">
-                {showArrow && <span className="animate-fade-in">➜</span>}
-                {command && <span className="animate-fade-in">$ {command}</span>}
+                {showArrow && <span className="animate-fade-in">$ </span>}
+                {command && <span className="animate-fade-in"> {command}</span>}
                 {showCursor && <span className="animate-blink">_</span>}
               </span>
               <h1 className="text-2xl font-bold text-[#39FF14] animate-slide-in self-end">samuel Widlund</h1>
