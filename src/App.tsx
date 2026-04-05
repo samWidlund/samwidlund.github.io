@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import { Typewriter } from './components/Typewriter'
 import { FileSystem } from './components/FileSystem'
 import { GitLog } from './components/GitLog'
@@ -8,6 +8,14 @@ export default function App() {
   const [command, setCommand] = useState<{ text: string; speed?: number } | null>(null)
   const [showArrow, setShowArrow] = useState(false)
   const [showCursor, setShowCursor] = useState(false)
+  const gitLogRef = useRef<HTMLDivElement>(null)
+
+  const handleExperience = useCallback((textLength: number, speed: number) => {
+    const delay = textLength * speed + 380
+    setTimeout(() => {
+      gitLogRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }, delay)
+  }, [])
 
   const handleComplete = useCallback(() => {
     setShowArrow(true)
@@ -44,10 +52,11 @@ export default function App() {
               setCommand(cmd)
               setShowCursor(true)
             }} 
+            onExperience={handleExperience}
           />
         </div>
       </div>
-      <div className="p-5 pt-0">
+      <div className="p-5 pt-0" ref={gitLogRef}>
         <GitLog />
       </div>
     </div>

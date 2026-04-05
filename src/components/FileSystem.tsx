@@ -28,15 +28,16 @@ interface CommandOptions {
 interface FileSystemProps {
   currentPath: string
   onCommand?: (cmd: CommandOptions) => void
+  onExperience?: (textLength: number, speed: number) => void
 }
 
-export const FileSystem: FC<FileSystemProps> = ({ currentPath, onCommand }) => {
+export const FileSystem: FC<FileSystemProps> = ({ currentPath, onCommand, onExperience }) => {
   return (
     <div className="text-[#39FF14] font-mono text-base">
       {currentPath === '~' && (
         <>
           <FileSystemItem type="directory" name="projects/" onClick={() => onCommand?.({ text: 'cd projects/', speed: 10 })}/>
-          <FileSystemItem type="command" name="experience" onClick={() => onCommand?.({ text: 'experience log', speed: 10 })} />
+          <FileSystemItem type="command" name="experience" onClick={() => { onCommand?.({ text: 'experience log', speed: 10 }); onExperience?.(13, 10) }} />
           <FileSystemItem type="file" name="about.txt" onClick={() => onCommand?.({ text: 'cat about.txt', speed: 10 })}/>
         </>
       )}
