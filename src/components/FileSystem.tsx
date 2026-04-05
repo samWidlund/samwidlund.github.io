@@ -35,9 +35,9 @@ export const FileSystem: FC<FileSystemProps> = ({ currentPath, onCommand }) => {
     <div className="text-[#39FF14] font-mono text-base">
       {currentPath === '~' && (
         <>
-          <FileSystemItem type="directory" name="projects/" />
+          <FileSystemItem type="directory" name="projects/" onClick={() => onCommand?.({ text: 'cd projects/', speed: 10 })}/>
           <FileSystemItem type="command" name="experience" onClick={() => onCommand?.({ text: 'experience log', speed: 10 })} />
-          <FileSystemItem type="file" name="about.txt" />
+          <FileSystemItem type="file" name="about.txt" onClick={() => onCommand?.({ text: 'cat about.txt', speed: 10 })}/>
         </>
       )}
     </div>
