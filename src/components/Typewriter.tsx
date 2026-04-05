@@ -8,7 +8,7 @@ interface TypewriterProps {
   onComplete?: () => void
 }
 
-export function Typewriter({ text, speed = 110, className = '', cursor = true, onComplete }: TypewriterProps) {
+export function Typewriter({ text, speed = 100, className = '', cursor = true, onComplete }: TypewriterProps) {
   const [displayed, setDisplayed] = useState('')
   const [done, setDone] = useState(false)
   const calledRef = useRef(false)

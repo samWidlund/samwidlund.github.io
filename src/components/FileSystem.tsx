@@ -20,9 +20,14 @@ const FileSystemItem: FC<FileSystemItemProps> = ({ type, name, onClick }) => {
   )
 }
 
+interface CommandOptions {
+  text: string
+  speed?: number
+}
+
 interface FileSystemProps {
   currentPath: string
-  onCommand?: (cmd: string) => void
+  onCommand?: (cmd: CommandOptions) => void
 }
 
 export const FileSystem: FC<FileSystemProps> = ({ currentPath, onCommand }) => {
@@ -31,7 +36,7 @@ export const FileSystem: FC<FileSystemProps> = ({ currentPath, onCommand }) => {
       {currentPath === '~' && (
         <>
           <FileSystemItem type="directory" name="projects/" />
-          <FileSystemItem type="command" name="experience" onClick={() => onCommand?.('experience log')} />
+          <FileSystemItem type="command" name="experience" onClick={() => onCommand?.({ text: 'experience log', speed: 10 })} />
           <FileSystemItem type="file" name="about.txt" />
         </>
       )}

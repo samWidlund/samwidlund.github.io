@@ -5,7 +5,7 @@ import { GitLog } from './components/GitLog'
 
 export default function App() {
   const [currentPath] = useState('~')
-  const [command, setCommand] = useState<string | null>(null)
+  const [command, setCommand] = useState<{ text: string; speed?: number } | null>(null)
   const [showArrow, setShowArrow] = useState(false)
   const [showCursor, setShowCursor] = useState(false)
 
@@ -31,7 +31,7 @@ export default function App() {
               </h1>
                 <span className="text-base text-[#39FF14] flex items-center gap-1">
                   {showArrow && <span className="animate-fade-in">$ </span>}
-                  {command && <span className="animate-fade-in"> {command}</span>}
+                  {command && <Typewriter text={command.text} speed={command.speed} cursor={false} onComplete={handleComplete} />}
                   {showCursor && <span className="animate-blink">_</span>}
                 </span>
               <h1 className="text-2xl font-bold text-[#39FF14] animate-slide-in self-end">samuel Widlund</h1>
