@@ -7,7 +7,7 @@ interface FileSystemItemProps {
 }
 
 const FileSystemItem: FC<FileSystemItemProps> = ({ type, name, onClick }) => {
-  const icon = type === 'directory' ? '[~]' : type === 'command' ? '[>]' : '[-]'
+  const icon = type === 'directory' ? '[~]' : type === 'command' ? '[>]' : type === 'file' ? '[-]' : ''
 
   return (
     <div
