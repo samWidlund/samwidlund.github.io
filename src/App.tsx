@@ -11,7 +11,7 @@ export default function App() {
   const gitLogRef = useRef<HTMLDivElement>(null)
 
   const handleExperience = useCallback((textLength: number, speed: number) => {
-    const delay = textLength * speed + 380
+    const delay = textLength * speed + 380 // delay auto scroll
     setTimeout(() => {
       gitLogRef.current?.scrollIntoView({ behavior: 'smooth' })
     }, delay)
