@@ -32,7 +32,7 @@ export default function App() {
                 <span className="text-base text-[#39FF14] flex items-center gap-1">
                   {showArrow && <span className="animate-fade-in">$ </span>}
                   {command && <span className='text-white'><Typewriter text={command.text} speed={command.speed} cursor={false} onComplete={handleComplete} /></span>}
-                  {showCursor && <span className="animate-blink">_</span>}
+                  {showCursor && <span className="text-white animate-blink">_</span>}
                 </span>
               <h1 className="text-2xl font-bold text-[#39FF14] animate-slide-in self-end">samuel Widlund</h1>
           </div>
