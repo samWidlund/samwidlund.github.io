@@ -12,21 +12,21 @@ export const experiences: Experience[] = [
     role: 'Process Operator',
     company: 'Fresenius Kabi Uppsala',
     period: 'May 2025 - current',
-    info: []
+    info: ['SCADA', 'Process control', 'Mechanical troubleshooting', 'Documentation']
   },
   {
     hash: 'a6f8e1d',
-    role: 'Consultant',
+    role: 'Consultant @ Fresenius Kabi',
     company: 'Randstad Uppsala',
     period: 'May 2025 - Jan 2026',
-    info: []
+    info: ['Initially consultant role as Process Operator @ Fresenius Kabi']
   },
   {
     hash: 'e4b2d6a',
     role: 'Reconciliation Agent',
     company: 'Etraveli Group',
     period: 'Sep 2024 - Dec 2024',
-    info: []
+    info: ['Administrative tasks', 'Google sheets']
   },
   {
     hash: 'd3c1f5b',
@@ -37,17 +37,17 @@ export const experiences: Experience[] = [
   },
   {
     hash: 'c2a9e4f',
-    role: 'Tire Change, Customer Service & Freight Truck Driving',
+    role: 'Tire Change, & Freight Truck Driving',
     company: 'Bildemo Uppsala',
-    period: 'Spring & Autumn 2023-2024',
-    info: []
-  },
+    period: 'Spring & Autumn 2023-2024',  
+    info: ['Customer service', 'Basic vechile maintenance']
+    },
   {
     hash: 'b1d8c3e',
     role: 'Warehouse Management & Cleaning',
     company: 'Lundagrossisten Uppsala Norr',
     period: 'Summer 2020, 2021, 2023',
-    info: []
+    info: ['Inventory management', 'Painting', 'Order handling']
   }
 ]
 
