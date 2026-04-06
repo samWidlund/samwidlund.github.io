@@ -5,3 +5,6 @@
 - use help do display things
 - use "ls" command to display projects, each project has own folder
 - https instead of http?
+- add education
+- add techical skills
+- change experience word
