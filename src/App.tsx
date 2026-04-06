@@ -10,7 +10,7 @@ export default function App() {
   const [showCursor, setShowCursor] = useState(false)
   const gitLogRef = useRef<HTMLDivElement>(null)
 
-  const handleExperience = useCallback((textLength: number, speed: number) => {
+  const handleResume = useCallback((textLength: number, speed: number) => {
     const delay = textLength * speed + 380 // delay auto scroll
     setTimeout(() => {
       gitLogRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -52,7 +52,7 @@ export default function App() {
               setCommand(cmd)
               setShowCursor(true)
             }} 
-            onExperience={handleExperience}
+            onResume={handleResume}
           />
         </div>
       </div>

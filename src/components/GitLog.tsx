@@ -52,7 +52,7 @@ export const GitLog: FC = () => {
       <div className="mb-1">
         <span className="text-[#39FF14]">$</span> git log --graph --all
       </div>
-      <div className="mb-2 text-gray-500">  (experience log)</div>
+      <div className="mb-2 text-gray-500">  (resume log)</div>
       {experiences.map((exp, i) => (
         <GitCommit
           key={exp.hash}
