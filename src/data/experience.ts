@@ -9,43 +9,64 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    hash: 'a3f2b1c',
-    role: 'Frontend Developer',
-    company: 'TechCorp',
-    period: 'Jan 2024 - Present',
-    description: [
-      'Utvecklade React-applikationer',
-      'Arbetade med TypeScript & Tailwind',
-      'Implementerade responsiv design'
-    ],
-    tech: ['React', 'TypeScript', 'Tailwind', 'Node.js']
+    hash: 'b7c9d2e',
+    role: 'Process Operator',
+    company: 'Fresenius Kabi Uppsala',
+    period: 'May 2025 - current',
+    description: ['Processoperatör inom läkemedelsindustrin'],
+    tech: []
   },
   {
-    hash: '7d4e9f2',
-    role: 'Junior Developer',
-    company: 'StartupXYZ',
-    period: 'Jun 2022 - Dec 2023',
-    description: [
-      'Byggde Webbplattformar',
-      'Arbetade med JavaScript',
-      'Lärde mig React'
-    ],
-    tech: ['JavaScript', 'HTML', 'CSS', 'React']
+    hash: 'a6f8e1d',
+    role: 'Consultant',
+    company: 'Randstad Uppsala',
+    period: 'May 2025 - Jan 2026',
+    description: ['Konsult inom bemanning och rekrytering'],
+    tech: []
   },
   {
-    hash: '1c2d3e4',
-    role: 'Intern',
-    company: 'Webbyrå',
-    period: 'Jan 2022 - May 2022',
+    hash: 'e4b2d6a',
+    role: 'Reconciliation Agent',
+    company: 'Etraveli Group',
+    period: 'Sep 2024 - Dec 2024',
+    description: ['Avstämning och ekonomisk rapportering'],
+    tech: []
+  },
+  {
+    hash: 'd3c1f5b',
+    role: 'DevOps, Automated & Manual Testing',
+    company: 'Cytiva Uppsala',
+    period: 'Feb 2024 - Aug 2024',
     description: [
-      'Assisterade med webbutveckling',
-      'Lärde mig grunderna i HTML & CSS'
+      'DevOps-arbete',
+      'Automatiserad mjukvarutestning',
+      'Manuell testning'
     ],
-    tech: ['HTML', 'CSS', 'Figma']
+    tech: ['Selenium', 'Flaui', 'Azure', 'YAML', 'Pipelines', 'PowerShell']
+  },
+  {
+    hash: 'c2a9e4f',
+    role: 'Tire Change, Customer Service & Freight Truck Driving',
+    company: 'Bildemo Uppsala',
+    period: 'Spring & Autumn 2023-2024',
+    description: [
+      'Däckbyte',
+      'Kundservice',
+      'Lastbilskörning'
+    ],
+    tech: []
+  },
+  {
+    hash: 'b1d8c3e',
+    role: 'Warehouse Management & Cleaning',
+    company: 'Lundagrossisten Uppsala Norr',
+    period: 'Summer 2020, 2021, 2023',
+    description: ['Lagerarbete och städning'],
+    tech: []
   }
 ]
 
 export const author = {
-  name: 'Samme',
+  name: 'Samuel Widlund',
   email: 'sam@me.se'
 }
