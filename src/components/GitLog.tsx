@@ -7,8 +7,8 @@ const GitCommit: FC<{
   isOnly: boolean
 }> = ({ experience, isLast, isOnly }) => {
   const isCurrent = experience.period.includes('current')
-  const branchChar = isCurrent ? '*' : isOnly || isLast ? '└' : '├'
-  const lineChar = isOnly || isLast ? ' ' : '│'
+  const branchChar = isCurrent ? '*' : isOnly || isLast ? '├' : '├' // needs to be fixed, ugly fix
+  const lineChar = isOnly || isLast ? '│' : '│' // needs to be fixed, ugly fix
 
   return (
     <div>
@@ -30,24 +30,18 @@ const GitCommit: FC<{
           {experience.period}
         </span>
       </div>
-      {experience.description.length > 0 && (
+      {experience.info.length > 0 && (
         <div className="ml-1">
           <span className="text-gray-500">{lineChar} </span>
-          {experience.description.map((desc, i) => (
-            <div key={i}>
-              <span className="text-gray-500">{lineChar} </span>
-              <span>{desc}</span>
-            </div>
-          ))}
+          <span className="text-[#39FF14]">{experience.info.join(', ')}</span>
         </div>
       )}
-      {experience.tech.length > 0 && (
-        <div className="ml-1">
-          <span className="text-gray-500">{lineChar} </span>
-          <span className="text-gray-400">Tech: </span>
-          <span className="text-[#39FF14]">{experience.tech.join(', ')}</span>
-        </div>
-      )}
+      <div className="ml-1">
+        <span className="text-gray-500">{lineChar} </span>
+      </div>
+      <div className="ml-1">
+        <span className="text-gray-500">{lineChar} </span>
+      </div>
     </div>
   )
 }
@@ -58,7 +52,7 @@ export const GitLog: FC = () => {
       <div className="mb-1">
         <span className="text-[#39FF14]">$</span> git log --graph --all
       </div>
-      <div className="mb-2 text-gray-500">  (experience history)</div>
+      <div className="mb-2 text-gray-500">  (experience log)</div>
       {experiences.map((exp, i) => (
         <GitCommit
           key={exp.hash}
