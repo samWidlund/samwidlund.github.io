@@ -7,4 +7,4 @@
 - https instead of http?
 - add education
 - add techical skills
-- change experience word
+- change experience word to resume
