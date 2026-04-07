@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
     role: 'Consultant @ Fresenius Kabi',
     company: 'Randstad Uppsala',
     period: 'May 2025 - Jan 2026',
-    info: ['Initially consultant as Process Operator', 'Transitioned to full-time role at Fresenius Kabi']
+    info: ['Initially hired as consultant', 'Promoted to full-time employee']
   },
   {
     hash: 'e4b2d6a',
