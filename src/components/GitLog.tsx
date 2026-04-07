@@ -50,7 +50,7 @@ const GitCommit: FC<{
   const lineChar = isOnly || isLast ? '│' : '│'
 
   const shortHash = experience.hash.slice(0, 7)
-  const refs = isFirst ? 'HEAD -> main' : hasOrigin && isLast ? 'portfolio/main, portfolio/HEAD' : ''
+  const refs = isFirst ? 'HEAD -> main' : hasOrigin && isLast ? 'portfolio/main' : ''
 
   return (
     <div>
@@ -60,7 +60,7 @@ const GitCommit: FC<{
         <span className="text-red-400">commit </span>
         <span className="text-violet-400">{shortHash}</span>
         {refs && (
-          <span className={refs === 'portfolio/main, portfolio/HEAD' ? 'text-red-600' : 'text-cyan-400'}> ({refs})</span>
+          <span className={refs === 'portfolio/main' ? 'text-red-600' : 'text-cyan-400'}> ({refs})</span>
         )}
       </div>
       <LineWithPrefix prefix={lineChar}>
