@@ -16,6 +16,7 @@ const FileSystemItem: FC<FileSystemItemProps> = ({ type, name, onClick }) => {
     >
       <span className="select-none">{icon}</span>
       <span>{name}</span>
+      <span className="animate-pulse text-white">&lt;</span>
     </div>
   )
 }
