@@ -23,7 +23,7 @@ const GitCommit: FC<{
         <span className="text-red-400">commit </span>
         <span className="text-violet-400">{shortHash}</span>
         {refs && (
-          <span className={refs === 'portfolio/main' ? 'text-red-600' : 'text-cyan-400'}> ({refs})</span>
+          <span className={refs === 'portfolio/main, portfolio/HEAD' ? 'text-red-600' : 'text-cyan-400'}> ({refs})</span>
         )}
       </div>
       <div className="ml-1">
