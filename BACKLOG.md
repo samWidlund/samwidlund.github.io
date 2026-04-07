@@ -8,3 +8,4 @@
 - add education
 - add techical skills
 - change experience word to resume
+- git log side lines breaks when info linebreaks
