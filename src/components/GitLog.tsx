@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type FC } from 'react'
 import { experiences } from '../data/experience'
+import { education } from '../data/education'
 
 const LineWithPrefix: FC<{
   prefix: string
@@ -38,7 +39,7 @@ const LineWithPrefix: FC<{
   )
 }
 
-const GitCommit: FC<{
+const GitCommitExperience: FC<{
   experience: (typeof experiences)[number]
   isLast: boolean
   isOnly: boolean
@@ -92,15 +93,75 @@ const GitCommit: FC<{
   )
 }
 
+const GitCommitEducation: FC<{
+  edu: (typeof education)[number]
+  isLast: boolean
+  isOnly: boolean
+  isFirst: boolean
+}> = ({ edu, isLast, isOnly, isFirst }) => {
+  const branchChar = isOnly || isLast ? '├' : '├'
+  const lineChar = isOnly || isLast ? '│' : '│'
+
+  const shortHash = edu.hash.slice(0, 7)
+  const refs = isFirst ? 'HEAD -> main' : ''
+
+  return (
+    <div>
+      <div>
+        <span className="text-yellow-400">{branchChar}</span>
+        <span className="text-cyan-400">─</span>
+        <span className="text-red-400">commit </span>
+        <span className="text-violet-400">{shortHash}</span>
+        {refs && (
+          <span className="text-cyan-400"> ({refs})</span>
+        )}
+      </div>
+      <LineWithPrefix prefix={lineChar}>
+        <span className="font-bold">Degree: </span>
+        <span className="text-yellow-400 font-bold">{edu.degree}</span>
+      </LineWithPrefix>
+      <LineWithPrefix prefix={lineChar}>
+        <span className="font-bold">School: </span>
+        <span>{edu.school}</span>
+      </LineWithPrefix>
+      <LineWithPrefix prefix={lineChar}>
+        <span className="font-bold">Date:   </span>
+        <span>{edu.period}</span>
+      </LineWithPrefix>
+      {edu.info.map((info, i) => (
+        <LineWithPrefix key={i} prefix={lineChar}>
+          <span className="text-[#39FF14]">{info}</span>
+        </LineWithPrefix>
+      ))}
+      <LineWithPrefix prefix={lineChar}>
+        <span />
+      </LineWithPrefix>
+      <LineWithPrefix prefix={lineChar}>
+        <span />
+      </LineWithPrefix>
+    </div>
+  )
+}
+
 export const GitLog: FC = () => {
   return (
     <div className="text-white font-mono text-sm">
       <div className="mb-1">
         <span className="text-[#39FF14]">$</span> git log --graph --all
       </div>
-      <div className="mb-2 text-gray-500">  (resume log)</div>
+      <div className="mb-2 text-gray-500">  (education log)</div>
+      {education.map((edu, i) => (
+        <GitCommitEducation
+          key={edu.hash}
+          edu={edu}
+          isLast={i === education.length - 1}
+          isOnly={education.length === 1}
+          isFirst={i === 0}
+        />
+      ))}
+      <div className="my-2 text-gray-500">  (experience log)</div>
       {experiences.map((exp, i) => (
-        <GitCommit
+        <GitCommitExperience
           key={exp.hash}
           experience={exp}
           isLast={i === experiences.length - 1}
