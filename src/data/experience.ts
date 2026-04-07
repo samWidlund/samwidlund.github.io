@@ -12,14 +12,14 @@ export const experiences: Experience[] = [
     role: 'Process Operator',
     company: 'Fresenius Kabi Uppsala',
     period: 'May 2025 - current',
-    info: ['SCADA', 'Process control', 'Mechanical troubleshooting', 'Documentation']
+    info: ['Fill-finish', 'Aseptic manufacturing', 'Cleanroom', 'Process control', 'GMP', 'Mechanical troubleshooting', 'SCADA', 'Documentation', 'Supervision']
   },
   {
     hash: 'a6f8e1d',
-    role: 'Consultant',
+    role: 'Consultant @ Fresenius Kabi',
     company: 'Randstad Uppsala',
     period: 'May 2025 - Jan 2026',
-    info: ['Initially consultant @ Fresenius Kabi']
+    info: ['Initially consultant as Process Operator', 'Transitioned to full-time role at Fresenius Kabi']
   },
   {
     hash: 'e4b2d6a',
