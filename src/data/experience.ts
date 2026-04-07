@@ -12,7 +12,7 @@ export const experiences: Experience[] = [
     role: 'Process Operator',
     company: 'Fresenius Kabi Uppsala',
     period: 'May 2025 - current',
-    info: ['Fill-finish', 'Aseptic manufacturing', 'Cleanroom', 'Process control', 'GMP', 'Mechanical troubleshooting', 'SCADA', 'Documentation', 'Supervision']
+    info: ['Fill-finish', 'Aseptic manufacturing', 'Cleanroom', 'Process control', 'GMP', 'Mechanical troubleshooting', 'Forklift (A, B, A2, A4)', 'SCADA', 'Documentation', 'Supervision']
   },
   {
     hash: 'a6f8e1d',
@@ -37,10 +37,10 @@ export const experiences: Experience[] = [
   },
   {
     hash: 'c2a9e4f',
-    role: 'Tire Change, & Freight Truck Driving',
+    role: 'Tire change & Truck Driving',
     company: 'Bildemo Uppsala',
     period: 'Spring & Autumn 2023-2024',  
-    info: ['Customer service', 'Basic vechile maintenance']
+    info: ['Customer service', 'Basic vechile maintenance', 'Freight truck driving']
     },
   {
     hash: 'b1d8c3e',
