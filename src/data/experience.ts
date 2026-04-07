@@ -30,10 +30,10 @@ export const experiences: Experience[] = [
   },
   {
     hash: 'd3c1f5b',
-    role: 'DevOps, Automated & Manual Testing',
+    role: 'DevOps & Testing',
     company: 'Cytiva Uppsala',
     period: 'Feb 2024 - Aug 2024',
-    info: ['PowerShell', 'C#', 'FlaUI', 'Azure', 'Pipelines']
+    info: ['Automation of test cases', 'Manual testing', 'PowerShell', 'C#', 'FlaUI', 'Azure', 'Pipelines']
   },
   {
     hash: 'c2a9e4f',
