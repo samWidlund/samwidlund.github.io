@@ -1,5 +1,42 @@
-import type { FC } from 'react'
+import { useEffect, useRef, useState, type FC } from 'react'
 import { experiences } from '../data/experience'
+
+const LineWithPrefix: FC<{
+  prefix: string
+  children: React.ReactNode
+}> = ({ prefix, children }) => {
+  const contentRef = useRef<HTMLSpanElement>(null)
+  const [lineCount, setLineCount] = useState(1)
+
+  useEffect(() => {
+    const el = contentRef.current
+    if (!el) return
+
+    const measure = () => {
+      const lineHeight = parseFloat(getComputedStyle(el).lineHeight)
+      const height = el.scrollHeight
+      const count = Math.max(1, Math.round(height / lineHeight))
+      setLineCount(count)
+    }
+
+    measure()
+
+    const observer = new ResizeObserver(measure)
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
+  return (
+    <div className="ml-1 flex flex-wrap">
+      <div className="flex flex-col pr-1 text-gray-500">
+        {Array.from({ length: lineCount }).map((_, i) => (
+          <span key={i}>{prefix}</span>
+        ))}
+      </div>
+      <span ref={contentRef}>{children}</span>
+    </div>
+  )
+}
 
 const GitCommit: FC<{
   experience: (typeof experiences)[number]
@@ -26,35 +63,31 @@ const GitCommit: FC<{
           <span className={refs === 'portfolio/main, portfolio/HEAD' ? 'text-red-600' : 'text-cyan-400'}> ({refs})</span>
         )}
       </div>
-      <div className="ml-1">
-        <span className="text-gray-500">{lineChar} </span>
+      <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Role:    </span>
         <span className="text-yellow-400 font-bold">{experience.role}</span>
-      </div>
-      <div className="ml-1">
-        <span className="text-gray-500">{lineChar} </span>
+      </LineWithPrefix>
+      <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Company: </span>
         <span>{experience.company}</span>
-      </div>
-      <div className="ml-1">
-        <span className="text-gray-500">{lineChar} </span>
+      </LineWithPrefix>
+      <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Date:   </span>
         <span className={isCurrent ? 'text-cyan-400 font-bold' : ''}>
           {experience.period}
         </span>
-      </div>
-      {experience.info.length > 0 && (
-        <div className="ml-1">
-          <span className="text-gray-500">{lineChar} </span>
-          <span className="text-[#39FF14]">{experience.info.join(', ')}</span>
-        </div>
-      )}
-      <div className="ml-1">
-        <span className="text-gray-500">{lineChar} </span>
-      </div>
-      <div className="ml-1">
-        <span className="text-gray-500">{lineChar} </span>
-      </div>
+      </LineWithPrefix>
+      {experience.info.map((info, i) => (
+        <LineWithPrefix key={i} prefix={lineChar}>
+          <span className="text-[#39FF14]">{info}</span>
+        </LineWithPrefix>
+      ))}
+      <LineWithPrefix prefix={lineChar}>
+        <span />
+      </LineWithPrefix>
+      <LineWithPrefix prefix={lineChar}>
+        <span />
+      </LineWithPrefix>
     </div>
   )
 }
