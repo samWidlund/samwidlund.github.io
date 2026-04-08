@@ -54,7 +54,7 @@ export const FileSystem: FC<FileSystemProps> = ({
                         type="directory"
                         name="projects/"
                         onClick={() => {
-                            onCommand?.({ text: 'ls projects/', speed: 10 });
+                            onCommand?.({ text: 'cd projects/', speed: 10 });
                             onProjects?.(10, 10);
                         }}
                     />

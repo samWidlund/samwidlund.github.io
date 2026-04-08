@@ -5,7 +5,5 @@
 - use help do display things
 - use "ls" command to display projects, each project has own folder
 - https instead of http?
-- add education
 - add techical skills
-- change experience word to resume
-- git log side lines breaks when info linebreaks
+- display project in --tree formatwith project parent directories like "web"
