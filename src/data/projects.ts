@@ -8,6 +8,7 @@ export interface ProjectLink {
 
 export interface Project {
     name: string;
+    category: string;
     description: string;
     tech: string[];
     links?: ProjectLink;
@@ -16,6 +17,7 @@ export interface Project {
 export const projects: Project[] = [
     {
         name: 'garderoben.w',
+        category: 'social',
         description: 'resale of curated outdoor & designer garments',
         tech: ['instagram', 'tiktok', 'tradera'],
         links: {
@@ -27,6 +29,7 @@ export const projects: Project[] = [
     },
     {
         name: 'wordTool',
+        category: 'python',
         description: 'thesaurus & dictionary api',
         tech: ['Shell', 'Python'],
         links: {
@@ -35,6 +38,7 @@ export const projects: Project[] = [
     },
     {
         name: 'todolistWeb',
+        category: 'web',
         description: 'simple to-do list web application',
         tech: ['HTML', 'CSS', 'JavaScript'],
         links: {
@@ -44,6 +48,7 @@ export const projects: Project[] = [
     },
     {
         name: 'dotnetTodoList',
+        category: 'dotnet',
         description: '.NET MAUI to-do list application',
         tech: ['.NET MAUI', 'C#'],
         links: {
@@ -52,6 +57,7 @@ export const projects: Project[] = [
     },
     {
         name: 'jewelryShopTemplate',
+        category: 'web',
         description: 'web jewelry shop template',
         tech: ['HTML', 'CSS', 'JavaScript'],
         links: {
@@ -61,6 +67,7 @@ export const projects: Project[] = [
     },
     {
         name: 'calculatorWeb',
+        category: 'web',
         description: 'web calculator',
         tech: ['HTML', 'CSS', 'JavaScript'],
         links: {
@@ -70,6 +77,7 @@ export const projects: Project[] = [
     },
     {
         name: 'garderobenwTemplate',
+        category: 'web',
         description: 'web shop template for garderoben.w',
         tech: ['HTML', 'CSS', 'Bootstrap'],
         links: {
@@ -79,6 +87,7 @@ export const projects: Project[] = [
     },
     {
         name: 'bussScheduleMonitor',
+        category: 'other',
         description:
             'buss schedule monitor fetching live data from ul and gtfs API',
         tech: ['HTML', 'CSS', 'JavaScript', 'SQLite'],
@@ -88,6 +97,7 @@ export const projects: Project[] = [
     },
     {
         name: 'blaklinten',
+        category: 'web',
         description: 'web florist blåklinten',
         tech: [
             'HTML',
@@ -106,6 +116,7 @@ export const projects: Project[] = [
     },
     {
         name: 'ntbBiluthyrning',
+        category: 'web',
         description: 'web car rental booking system',
         tech: [
             'HTML',
@@ -123,6 +134,7 @@ export const projects: Project[] = [
     },
     {
         name: 'mathChallengeAlarm',
+        category: 'python',
         description: 'math challenge alarm clock with Raspberry Pi 3',
         tech: ['Python', 'Raspberry Pi 3'],
         links: {
