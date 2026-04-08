@@ -37,7 +37,7 @@ const CategoryFolder: FC<CategoryFolderProps> = ({
                     {getPrefix()}
                 </span>
                 <span className="select-none shrink-0 text-yellow-400">
-                    {isOpen ? '[-]' : '[+]'}
+                    {isOpen ? '[-] ' : '[+] '}
                 </span>
                 <span className="text-yellow-400">{category}/</span>
             </div>
@@ -94,7 +94,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                     {getPrefix()}
                 </span>
                 <span className="select-none shrink-0 text-cyan-400">
-                    {isOpen ? '[-]' : '[+]'}
+                    {isOpen ? '[-] ' : '[+] '}
                 </span>
                 <span className="text-cyan-400">{project.name}/</span>
             </div>
@@ -262,25 +262,30 @@ export const Projects: FC = () => {
     return (
         <div id="projects" className="text-white font-mono text-sm">
             <div className="mb-1">
-                <span className="text-[#39FF14]">$</span> tree -L 2 projects/
+                <span className="text-[#39FF14]">$</span> tree -L 2
             </div>
             <div className="my-6 text-lg text-[#39FF14] font-bold">
                 ═══ PROJECTS ═══
             </div>
             <div className="mt-2">
-                {sortedCategories.map((category, index) => (
-                    <CategoryFolder
-                        key={category}
-                        category={category}
-                        projects={groupedProjects[category]}
-                        isOpen={openCategories.has(category)}
-                        isLast={index === sortedCategories.length - 1}
-                        parentIsLast={true}
-                        openProjects={openProjects}
-                        onToggleCategory={() => toggleCategory(category)}
-                        onToggleProject={toggleProject}
-                    />
-                ))}
+                <div className="flex gap-0 p-1">
+                    <span className="text-yellow-400">projects/</span>
+                </div>
+                <div className="ml-4">
+                    {sortedCategories.map((category, index) => (
+                        <CategoryFolder
+                            key={category}
+                            category={category}
+                            projects={groupedProjects[category]}
+                            isOpen={openCategories.has(category)}
+                            isLast={index === sortedCategories.length - 1}
+                            parentIsLast={true}
+                            openProjects={openProjects}
+                            onToggleCategory={() => toggleCategory(category)}
+                            onToggleProject={toggleProject}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );
