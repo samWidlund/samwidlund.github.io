@@ -97,13 +97,11 @@ const GitCommitEducation: FC<{
   edu: (typeof education)[number]
   isLast: boolean
   isOnly: boolean
-  isFirst: boolean
-}> = ({ edu, isLast, isOnly, isFirst }) => {
+}> = ({ edu, isLast, isOnly }) => {
   const branchChar = isOnly || isLast ? '├' : '├'
   const lineChar = isOnly || isLast ? '│' : '│'
 
   const shortHash = edu.hash.slice(0, 7)
-  const refs = isFirst ? 'HEAD -> main' : ''
 
   return (
     <div>
@@ -112,13 +110,10 @@ const GitCommitEducation: FC<{
         <span className="text-cyan-400">─</span>
         <span className="text-red-400">commit </span>
         <span className="text-violet-400">{shortHash}</span>
-        {refs && (
-          <span className="text-cyan-400"> ({refs})</span>
-        )}
       </div>
       <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Degree: </span>
-        <span className="text-yellow-400 font-bold">{edu.degree}</span>
+        <span className="text-[#39FF14] font-bold">{edu.degree}</span>
       </LineWithPrefix>
       <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">School: </span>
@@ -130,7 +125,7 @@ const GitCommitEducation: FC<{
       </LineWithPrefix>
       {edu.info.map((info, i) => (
         <LineWithPrefix key={i} prefix={lineChar}>
-          <span className="text-[#39FF14]">{info}</span>
+          <span className="text-orange-400">{info}</span>
         </LineWithPrefix>
       ))}
       <LineWithPrefix prefix={lineChar}>
@@ -149,17 +144,20 @@ export const GitLog: FC = () => {
       <div className="mb-1">
         <span className="text-[#39FF14]">$</span> git log --graph --all
       </div>
-      <div className="mb-2 text-gray-500">  (education log)</div>
+      <div className="my-6 text-lg text-[#39FF14] font-bold">
+        ═══ EDUCATION ═══
+      </div>
       {education.map((edu, i) => (
         <GitCommitEducation
           key={edu.hash}
           edu={edu}
           isLast={i === education.length - 1}
           isOnly={education.length === 1}
-          isFirst={i === 0}
         />
       ))}
-      <div className="my-2 text-gray-500">  (experience log)</div>
+      <div className="my-6 text-lg text-[#39FF14] font-bold">
+        ═══ EXPERIENCE ═══
+      </div>
       {experiences.map((exp, i) => (
         <GitCommitExperience
           key={exp.hash}
