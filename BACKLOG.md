@@ -6,4 +6,4 @@
 - use "ls" command to display projects, each project has own folder
 - https instead of http?
 - add techical skills
-- display project in --tree formatwith project parent directories like "web"
+- add spacing or seperator for commands to show $ eg git log better

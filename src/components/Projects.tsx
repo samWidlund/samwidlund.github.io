@@ -128,7 +128,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >                            
                                         <span className="select-none shrink-0 ml-4">   </span>
-                                        <span>github: {project.links.github.replace('https://github.com/', '')}</span>
+                                        <span>github</span>
                                     </a>
                                 )}
                                 {project.links.live && (
@@ -139,7 +139,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >
                                         <span className="select-none shrink-0 ml-4">    </span>
-                                        <span>live: {project.links.live.replace('https://', '').replace('http://', '')}</span>
+                                        <span>web</span>
                                     </a>
                                 )}
                                 {project.links.instagram && (
