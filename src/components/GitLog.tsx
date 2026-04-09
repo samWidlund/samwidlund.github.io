@@ -142,7 +142,7 @@ export const GitLog: FC = () => {
   return (
     <div className="text-white font-mono text-sm">
       <div className="mb-1">
-        <span className="text-[#39FF14]">$</span> git log --graph --all
+        <span className="text-[#39FF14]">$</span> resume log --graph --all
       </div>
       <div className="my-6 text-lg text-[#39FF14] font-bold">
         ═══ EDUCATION ═══

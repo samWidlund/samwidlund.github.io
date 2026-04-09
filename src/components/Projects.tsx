@@ -262,7 +262,7 @@ export const Projects: FC = () => {
     return (
         <div id="projects" className="text-white font-mono text-sm">
             <div className="mb-1">
-                <span className="text-[#39FF14]">$</span> tree -L 2
+                <span className="text-[#39FF14]">$</span> tree -L 2 projects/
             </div>
             <div className="my-6 text-lg text-[#39FF14] font-bold">
                 ═══ PROJECTS ═══
