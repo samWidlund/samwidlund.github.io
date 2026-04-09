@@ -86,10 +86,10 @@ export default function App() {
                     />
                 </div>
             </div>
-            <div className="p-5" ref={projectsRef}>
+            <div className="pt-10 px-5" ref={projectsRef}>
                 <Projects />
             </div>
-            <div className="p-5 pt-0" ref={gitLogRef}>
+            <div className="pt-10 px-5" ref={gitLogRef}>
                 <GitLog />
             </div>
         </div>
