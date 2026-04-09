@@ -99,7 +99,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                         <span className="select-none shrink-0">├── </span>
                         <span>ABOUT.md</span>
                     </div>
-                    <div className="flex gap-0 p-1 text-gray-400">
+                    <div className="flex gap-0 p-1 text-gray-400 ml-4">
                         <span className="select-none shrink-0">└── </span>
                         <span className="text-gray-300">{project.description}</span>
                     </div>
@@ -109,8 +109,8 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                         <span>stack/</span>
                     </div>
                     <div className="flex gap-0 p-1">
-                        <span className="select-none shrink-0 ml-5">└── </span>
-                        <span className="text-cyan-400">{project.tech.join(', ')}</span>
+                        <span className="select-none shrink-0 ml-4 text-gray-400">└── </span>
+                        <span className="text-white"> {project.tech.join(', ')}</span>
                     </div>
 
                     {project.links && (
@@ -127,7 +127,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >                            
-                                        <span className="select-none shrink-0">    </span>
+                                        <span className="select-none shrink-0 ml-4">   </span>
                                         <span>github: {project.links.github.replace('https://github.com/', '')}</span>
                                     </a>
                                 )}
@@ -138,7 +138,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0">    </span>
+                                        <span className="select-none shrink-0 ml-4">    </span>
                                         <span>live: {project.links.live.replace('https://', '').replace('http://', '')}</span>
                                     </a>
                                 )}
