@@ -105,7 +105,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                     </div>
 
                     <div className="flex gap-0 p-1 text-gray-400">
-                        <span className="select-none shrink-0">└── </span>
+                        <span className="select-none shrink-0">├── </span>
                         <span>stack/</span>
                     </div>
                     <div className="flex gap-0 p-1">
@@ -127,7 +127,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >                            
-                                        <span className="select-none shrink-0 ml-4">   </span>
+                                        <span className="select-none shrink-0 ml-6"></span>
                                         <span>github</span>
                                     </a>
                                 )}
@@ -138,7 +138,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0 ml-4">    </span>
+                                        <span className="select-none shrink-0 ml-6"></span>
                                         <span>web</span>
                                     </a>
                                 )}
