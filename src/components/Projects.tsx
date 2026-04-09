@@ -72,16 +72,10 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
     project,
     isOpen,
     isLast,
-    categoryIsLast,
     onToggle,
 }) => {
     const getPrefix = () => {
         return isLast ? '└── ' : '├── ';
-    };
-
-    const getInnerPrefix = () => {
-        const innerPrefix = categoryIsLast ? '    ' : '│   ';
-        return innerPrefix;
     };
 
     return (
@@ -102,41 +96,26 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
             {isOpen && (
                 <div className="ml-4">
                     <div className="flex gap-0 p-1 text-gray-400">
-                        <span className="select-none shrink-0 text-gray-500">
-                            {getInnerPrefix()}
-                        </span>
                         <span className="select-none shrink-0">├── </span>
                         <span>ABOUT.md</span>
                     </div>
                     <div className="flex gap-0 p-1 text-gray-400">
-                        <span className="select-none shrink-0 text-gray-500">
-                            {getInnerPrefix()}
-                        </span>
                         <span className="select-none shrink-0">└── </span>
                         <span className="text-gray-300">{project.description}</span>
                     </div>
 
                     <div className="flex gap-0 p-1 text-gray-400">
-                        <span className="select-none shrink-0 text-gray-500">
-                            {getInnerPrefix()}
-                        </span>
                         <span className="select-none shrink-0">└── </span>
                         <span>stack/</span>
                     </div>
                     <div className="flex gap-0 p-1">
-                        <span className="select-none shrink-0 text-gray-500">
-                            {getInnerPrefix()}
-                        </span>
-                        <span className="select-none shrink-0">    </span>
+                        <span className="select-none shrink-0 ml-5">└── </span>
                         <span className="text-cyan-400">{project.tech.join(', ')}</span>
                     </div>
 
                     {project.links && (
                         <>
                             <div className="flex gap-0 p-1 text-gray-400">
-                                <span className="select-none shrink-0 text-gray-500">
-                                    {getInnerPrefix()}
-                                </span>
                                 <span className="select-none shrink-0">└── </span>
                                 <span>links/</span>
                             </div>
@@ -147,10 +126,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
-                                    >
-                                        <span className="select-none shrink-0 text-gray-500">
-                                            {getInnerPrefix()}
-                                        </span>
+                                    >                            
                                         <span className="select-none shrink-0">    </span>
                                         <span>github: {project.links.github.replace('https://github.com/', '')}</span>
                                     </a>
@@ -162,9 +138,6 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0 text-gray-500">
-                                            {getInnerPrefix()}
-                                        </span>
                                         <span className="select-none shrink-0">    </span>
                                         <span>live: {project.links.live.replace('https://', '').replace('http://', '')}</span>
                                     </a>
@@ -176,9 +149,6 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0 text-gray-500">
-                                            {getInnerPrefix()}
-                                        </span>
                                         <span className="select-none shrink-0">    </span>
                                         <span>instagram</span>
                                     </a>
@@ -190,9 +160,6 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0 text-gray-500">
-                                            {getInnerPrefix()}
-                                        </span>
                                         <span className="select-none shrink-0">    </span>
                                         <span>tiktok</span>
                                     </a>
@@ -204,9 +171,6 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-cyan-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0 text-gray-500">
-                                            {getInnerPrefix()}
-                                        </span>
                                         <span className="select-none shrink-0">    </span>
                                         <span>tradera</span>
                                     </a>
