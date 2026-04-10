@@ -209,6 +209,7 @@ export const Projects: FC = () => {
             if (next.has(name)) {
                 next.delete(name);
             } else {
+                next.clear();
                 next.add(name);
             }
             return next;
