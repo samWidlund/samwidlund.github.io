@@ -3,6 +3,7 @@ import { Typewriter } from './components/Typewriter';
 import { FileSystem } from './components/FileSystem';
 import { GitLog } from './components/GitLog';
 import { Projects } from './components/Projects';
+import { About } from './components/About';
 
 export default function App() {
     const [currentPath] = useState('~');
@@ -14,6 +15,7 @@ export default function App() {
     const [showCursor, setShowCursor] = useState(false);
     const gitLogRef = useRef<HTMLDivElement>(null);
     const projectsRef = useRef<HTMLDivElement>(null);
+    const aboutRef = useRef<HTMLDivElement>(null);
 
     const handleResume = useCallback((textLength: number, speed: number) => {
         const delay = textLength * speed + 380;
@@ -26,6 +28,13 @@ export default function App() {
         const delay = textLength * speed + 380;
         setTimeout(() => {
             projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }, delay);
+    }, []);
+
+    const handleAbout = useCallback((textLength: number, speed: number) => {
+        const delay = textLength * speed + 380;
+        setTimeout(() => {
+            aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
         }, delay);
     }, []);
 
@@ -83,11 +92,15 @@ export default function App() {
                         }}
                         onResume={handleResume}
                         onProjects={handleProjects}
+                        onAbout={handleAbout}
                     />
                 </div>
             </div>
             <div className="pt-10 px-5" ref={projectsRef}>
                 <Projects />
+            </div>
+            <div className="pt-10 px-5" ref={aboutRef}>
+                <About />
             </div>
             <div className="pt-10 px-5" ref={gitLogRef}>
                 <GitLog />

@@ -38,6 +38,7 @@ interface FileSystemProps {
     onCommand?: (cmd: CommandOptions) => void;
     onResume?: (textLength: number, speed: number) => void;
     onProjects?: (textLength: number, speed: number) => void;
+    onAbout?: (textLength: number, speed: number) => void;
 }
 
 export const FileSystem: FC<FileSystemProps> = ({
@@ -45,6 +46,7 @@ export const FileSystem: FC<FileSystemProps> = ({
     onCommand,
     onResume,
     onProjects,
+    onAbout,
 }) => {
     return (
         <div className="text-[#39FF14] font-mono text-base">
@@ -60,10 +62,11 @@ export const FileSystem: FC<FileSystemProps> = ({
                     />
                     <FileSystemItem
                         type="file"
-                        name="about.txt"
-                        onClick={() =>
-                            onCommand?.({ text: 'cat about.md', speed: 10 })
-                        }
+                        name="about.md"
+                        onClick={() => {
+                            onCommand?.({ text: 'cat about.md', speed: 10 });
+                            onAbout?.(10, 10);
+                        }}
                     />
                     <FileSystemItem
                         type="command"
