@@ -87,10 +87,10 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                 <span className="select-none shrink-0 text-gray-500">
                     {getPrefix()}
                 </span>
-                <span className="select-none shrink-0 text-cyan-400">
+                <span className="select-none shrink-0 text-purple-400">
                     {isOpen ? '[-] ' : '[+] '}
                 </span>
-                <span className="text-cyan-400">{project.name}/</span>
+                <span className="text-purple-400">{project.name}/</span>
             </div>
 
             {isOpen && (
@@ -125,7 +125,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         href={project.links.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex gap-0 text-cyan-400 hover:underline"
+                                        className="flex gap-0 text-blue-400 hover:underline"
                                     >                            
                                         <span className="select-none shrink-0 ml-6"></span>
                                         <span>github</span>
@@ -136,7 +136,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         href={project.links.live}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex gap-0 text-cyan-400 hover:underline"
+                                        className="flex gap-0 text-blue-400 hover:underline"
                                     >
                                         <span className="select-none shrink-0 ml-6"></span>
                                         <span>web</span>
@@ -147,7 +147,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         href={project.links.instagram}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex gap-0 text-cyan-400 hover:underline"
+                                        className="flex gap-0 text-blue-400 hover:underline"
                                     >
                                         <span className="select-none shrink-0">    </span>
                                         <span>instagram</span>
@@ -158,7 +158,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         href={project.links.tiktok}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex gap-0 text-cyan-400 hover:underline"
+                                        className="flex gap-0 text-blue-400 hover:underline"
                                     >
                                         <span className="select-none shrink-0">    </span>
                                         <span>tiktok</span>
@@ -169,7 +169,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         href={project.links.tradera}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex gap-0 text-cyan-400 hover:underline"
+                                        className="flex gap-0 text-blue-400 hover:underline"
                                     >
                                         <span className="select-none shrink-0">    </span>
                                         <span>tradera</span>
