@@ -62,9 +62,9 @@ export const FileSystem: FC<FileSystemProps> = ({
                     />
                     <FileSystemItem
                         type="file"
-                        name="about.md"
+                        name="ABOUT.md"
                         onClick={() => {
-                            onCommand?.({ text: 'cat about.md', speed: 10 });
+                            onCommand?.({ text: 'cat ABOUT.md', speed: 10 });
                             onAbout?.(10, 10);
                         }}
                     />

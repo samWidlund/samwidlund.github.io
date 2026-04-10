@@ -5,7 +5,7 @@ export const About: FC = () => {
         <div className="text-white font-mono text-sm min-h-screen flex items-center">
             <div className="px-5 w-full max-w-2xl">
                 <div className="mb-4">
-                    <span className="text-[#39FF14]">$</span> cat about.md
+                    <span className="text-[#39FF14]">$</span> cat ABOUT.md
                 </div>
                 <div>
                     <h1># About</h1>
