@@ -56,7 +56,7 @@ export const FileSystem: FC<FileSystemProps> = ({
                         type="directory"
                         name="projects/"
                         onClick={() => {
-                            onCommand?.({ text: 'cd projects/', speed: 10 });
+                            onCommand?.({ text: 'tree -L 2 projects/', speed: 10 });
                             onProjects?.(10, 10);
                         }}
                     />
@@ -72,7 +72,7 @@ export const FileSystem: FC<FileSystemProps> = ({
                         type="command"
                         name="resume"
                         onClick={() => {
-                            onCommand?.({ text: 'resume log', speed: 10 });
+                            onCommand?.({ text: 'resume log --graph --all', speed: 10 });
                             onResume?.(10, 10);
                         }}
                     />
