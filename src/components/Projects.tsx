@@ -97,7 +97,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                 <div className="ml-4">
                     <div className="flex gap-0 p-1 text-gray-400">
                         <span className="select-none shrink-0">├── </span>
-                        <span>ABOUT.md</span>
+                        <span>README.md</span>
                     </div>
                     <div className="flex gap-0 p-1 text-gray-400 ml-4">
                         <span className="select-none shrink-0">└── </span>
