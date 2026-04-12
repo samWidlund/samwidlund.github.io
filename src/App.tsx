@@ -19,21 +19,21 @@ export default function App() {
     const aboutRef = useRef<HTMLDivElement>(null);
 
     const handleResume = useCallback((textLength: number, speed: number) => {
-        const delay = textLength * speed + 380;
+        const delay = textLength * speed + 600;
         setTimeout(() => {
             gitLogRef.current?.scrollIntoView({ behavior: 'smooth' });
         }, delay);
     }, []);
 
     const handleProjects = useCallback((textLength: number, speed: number) => {
-        const delay = textLength * speed + 380;
+        const delay = textLength * speed + 600;
         setTimeout(() => {
             projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
         }, delay);
     }, []);
 
     const handleAbout = useCallback((textLength: number, speed: number) => {
-        const delay = textLength * speed + 380;
+        const delay = textLength * speed + 600;
         setTimeout(() => {
             aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
         }, delay);
