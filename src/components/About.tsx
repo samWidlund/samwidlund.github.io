@@ -3,7 +3,7 @@ import type { FC } from 'react';
 export const About: FC = () => {
     return (
         <div className="text-white font-mono text-sm min-h-screen flex items-center">
-            <div className="px-5 w-full max-w-2xl">
+            <div className="w-full max-w-2xl">
                 <div className="mb-4">
                     <span className="text-[#39FF14]">$</span> cat ABOUT.md
                 </div>
