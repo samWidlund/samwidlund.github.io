@@ -4,6 +4,7 @@ import { FileSystem } from './components/FileSystem';
 import { GitLog } from './components/GitLog';
 import { Projects } from './components/Projects';
 import { About } from './components/About';
+import { Footer } from './components/Footer';
 
 export default function App() {
     const [currentPath] = useState('~');
@@ -105,6 +106,7 @@ export default function App() {
             <div className="pt-10 px-5" ref={gitLogRef}>
                 <GitLog />
             </div>
+            <Footer />
         </div>
     );
 }
