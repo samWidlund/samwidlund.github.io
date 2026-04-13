@@ -2,7 +2,7 @@ import type { FC } from 'react';
 
 export const About: FC = () => {
     return (
-        <div className="text-white font-mono text-sm min-h-screen flex items-center py-5">
+        <div className="text-white font-mono text-sm min-h-screen flex items-center">
             <div className="w-full max-w-2xl">
                 <div className="mb-4">
                     <span className="text-[#39FF14]">$</span> cat ABOUT.md
@@ -33,7 +33,6 @@ export const About: FC = () => {
                     <p><a href="https://github.com/samWidlund" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:underline'>Github</a></p>
                     <p><a href="https://www.linkedin.com/in/samuel-widlund-388202290/" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:underline'>Linkedin</a></p>
                     <p><a href="mailto:sam.wid415@gmail.com" className='text-blue-400 hover:underline'>Mail</a></p>
-
                 </div>
             </div>
         </div>

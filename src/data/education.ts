@@ -9,7 +9,7 @@ export interface Education {
 export const education: Education[] = [
   {
     hash: 'a1b2c3d',
-    degree: 'Upper secondary school engineer',
+    degree: 'High school engineer',
     school: 'NTI Gymnasiet Uppsala',
     period: 'Aug 2023 - Jun 2024',
     info: ['Programming', 'Web Development', 'Design', 'Software engineering', 'Scrum/Agile', 'Project management']
@@ -26,6 +26,6 @@ export const education: Education[] = [
     degree: 'Technology programme',
     school: 'NTI Gymnasiet Uppsala',
     period: 'Aug 2020 - Jun 2023',
-    info: ['Upper secondary education', 'Technical science', 'Mathematics', 'Physics', 'Web Development', 'Programming']
+    info: ['High school education', 'Technical science', 'Mathematics', 'Physics', 'Web Development', 'Programming']
   }
 ]
