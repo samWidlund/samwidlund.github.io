@@ -58,15 +58,15 @@ const GitCommitExperience: FC<{
       <div>
         <span className="text-yellow-400">{branchChar}</span>
         <span className="text-cyan-400">─</span>
-        <span className="text-red-400">commit </span>
-        <span className="text-violet-400">{shortHash}</span>
+        <span className="text-yellow-400">commit </span>
+        <span className="text-yellow-400">{shortHash}</span>
         {refs && (
           <span className={refs === 'portfolio/main' ? 'text-red-600' : 'text-cyan-400'}> ({refs})</span>
         )}
       </div>
       <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Role:    </span>
-        <span className="text-yellow-400 font-bold">{experience.role}</span>
+        <span className="text-[#39FF14] font-bold">{experience.role}</span>
       </LineWithPrefix>
       <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Company: </span>
@@ -80,7 +80,7 @@ const GitCommitExperience: FC<{
       </LineWithPrefix>
       {experience.info.map((info, i) => (
         <LineWithPrefix key={i} prefix={lineChar}>
-          <span className="text-[#39FF14]">{info}</span>
+          <span className="text-white">{info}</span>
         </LineWithPrefix>
       ))}
       <LineWithPrefix prefix={lineChar}>
@@ -108,8 +108,8 @@ const GitCommitEducation: FC<{
       <div>
         <span className="text-yellow-400">{branchChar}</span>
         <span className="text-cyan-400">─</span>
-        <span className="text-red-400">commit </span>
-        <span className="text-violet-400">{shortHash}</span>
+        <span className="text-yellow-400">commit </span>
+        <span className="text-yellow-400">{shortHash}</span>
       </div>
       <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Degree: </span>
@@ -125,7 +125,7 @@ const GitCommitEducation: FC<{
       </LineWithPrefix>
       {edu.info.map((info, i) => (
         <LineWithPrefix key={i} prefix={lineChar}>
-          <span className="text-orange-400">{info}</span>
+          <span className="text-white">{info}</span>
         </LineWithPrefix>
       ))}
       <LineWithPrefix prefix={lineChar}>
