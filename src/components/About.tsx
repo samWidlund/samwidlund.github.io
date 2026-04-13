@@ -17,8 +17,17 @@ export const About: FC = () => {
                     tänndalen 100 miles.
                     <br />
                     <br />
-                    ## tech: <br />
-                    - JavaScript, React, TypeScript, Python, Tailwind CSS
+                    ## Tech <br />
+                    - JavaScript, TypeScript, React < br/>
+                    - CSS, Tailwind, Bootstrap < br/>
+                    - Python, C#, VBScript < br/>
+                     - Bash, Fish, Powershell < br/>
+                     - Windows, Linux < br/>
+                    - Azure, Pipelines, Yaml < br/>
+                     - SQL, SQLite < br/>
+                     - Selenium, FlaUI < br/>
+                     - Scrum, git < br/>
+                    
                 </div>
             </div>
         </div>
