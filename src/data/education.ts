@@ -23,7 +23,7 @@ export const education: Education[] = [
   },
   {
     hash: 'i9j0k1l',
-    degree: 'Technology program',
+    degree: 'Technology Programme, Upper Secondary Education',
     school: 'NTI Gymnasiet Uppsala',
     period: 'Aug 2020 - Jun 2023',
     info: ['Technical science', 'Mathematics', 'Physics', 'Web Development', 'Programming']
