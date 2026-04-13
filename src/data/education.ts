@@ -26,6 +26,6 @@ export const education: Education[] = [
     degree: 'Technology programme',
     school: 'NTI Gymnasiet Uppsala',
     period: 'Aug 2020 - Jun 2023',
-    info: ['Upper secondary school', 'Technical science', 'Mathematics', 'Physics', 'Web Development', 'Programming']
+    info: ['Upper secondary education', 'Technical science', 'Mathematics', 'Physics', 'Web Development', 'Programming']
   }
 ]
