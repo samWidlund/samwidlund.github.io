@@ -11,7 +11,6 @@ export const About: FC = () => {
                     <h1># About</h1>
                      hello! I'm samuel Widlund. <br />
                     < br/>
-                    < br/>
                     ## Intro < br/>
                     Diploma in software engineering. based in
                     Uppsala, Sweden with a keen interest in software development,
