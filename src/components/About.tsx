@@ -9,7 +9,7 @@ export const About: FC = () => {
                 </div>
                 <div>
                     <h1># About</h1>
-
+                    < br/>
                     ## Intro < br/>
                     hello! I'm samuel Widlund. <br />
                     diploma in software engineering. based in
@@ -29,7 +29,7 @@ export const About: FC = () => {
                     - SQL, SQLite < br/>
                     - Selenium, FlaUI < br/>
                     - Scrum, git < br/>
-
+                    < br/>
                     ## Links < br/>
                     Github < br/>
                     Linkedin < br/>
