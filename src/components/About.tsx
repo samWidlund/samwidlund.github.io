@@ -33,6 +33,7 @@ export const About: FC = () => {
                     <p><a href="https://github.com/samWidlund" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:underline'>Github</a></p>
                     <p><a href="https://www.linkedin.com/in/samuel-widlund-388202290/" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:underline'>Linkedin</a></p>
                     <p><a href="mailto:sam.wid415@gmail.com" className='text-blue-400 hover:underline'>Mail</a></p>
+                    <p><a href="https://www.strava.com/athletes/125602388/" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:underline'>Strava</a></p>
                 </div>
             </div>
         </div>
