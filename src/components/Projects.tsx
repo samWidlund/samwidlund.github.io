@@ -225,7 +225,7 @@ export const Projects: FC = () => {
     }, {} as Record<string, Project[]>);
 
     return (
-        <div id="projects" className="text-white font-mono text-sm min-h-screen">
+        <div id="projects" className="text-white font-mono text-sm">
 
                 <div className="mb-1">
                     <span className="text-[#39FF14]">$</span> tree -L 2 projects/
