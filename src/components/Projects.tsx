@@ -149,7 +149,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-blue-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0">    </span>
+                                        <span className="select-none shrink-0 ml-6">    </span>
                                         <span>instagram</span>
                                     </a>
                                 )}
@@ -160,7 +160,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-blue-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0">    </span>
+                                        <span className="select-none shrink-0 ml-6">    </span>
                                         <span>tiktok</span>
                                     </a>
                                 )}
@@ -171,7 +171,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         rel="noopener noreferrer"
                                         className="flex gap-0 text-blue-400 hover:underline"
                                     >
-                                        <span className="select-none shrink-0">    </span>
+                                        <span className="select-none shrink-0 ml-6">    </span>
                                         <span>tradera</span>
                                     </a>
                                 )}
