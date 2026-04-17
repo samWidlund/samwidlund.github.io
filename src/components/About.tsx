@@ -2,19 +2,14 @@ import type { FC } from 'react';
 
 export const About: FC = () => {
     return (
-        <div className="text-white font-mono text-sm min-h-[100dvh] flex items-center">
+        <div className="text-white font-mono text-sm min-h-dvh flex items-center">
             <div className="w-full max-w-2xl">
                 <div className="mb-4">
                     <span className="text-[#39FF14]">$</span> cat ABOUT.md
                 </div>
                 <div>
-                    -------------------------- <br />
-                    hello! I'm samuel Widlund. <br />
-                    -------------------------- <br />
-                    <br />
                     <p># Intro</p>
-                    <p>Based in
-                    Uppsala, Sweden with a keen interest in web development,
+                    <p>Based in Uppsala, Sweden with a keen interest in web development,
                     software and design. In addition, I spend my free time engaging in
                     ultrarunning aswell as reselling clothing. Currently training for
                     tänndalen 100 miles. </p>
