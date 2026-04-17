@@ -1,4 +1,4 @@
-import { useState, type FC } from 'react';
+import { useState, useEffect, type FC } from 'react';
 import { projects, type Project } from '../data/projects';
 
 interface CategoryFolderProps {
@@ -79,7 +79,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
     };
 
     return (
-        <div>
+        <div id={`project-${project.name}`}>
             <div
                 onClick={onToggle}
                 className="flex gap-0 hover:bg-[rgba(57,255,20,0.1)] cursor-pointer p-1 transition-colors break-all"
@@ -213,6 +213,16 @@ export const Projects: FC = () => {
         new Set(sortedCategories)
     );
     const [openProjects, setOpenProjects] = useState<Set<string>>(new Set());
+    const [lastOpenedProject, setLastOpenedProject] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (lastOpenedProject) {
+            const element = document.getElementById(`project-${lastOpenedProject}`);
+            element?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            const timer = setTimeout(() => setLastOpenedProject(null), 100);
+            return () => clearTimeout(timer);
+        }
+    }, [lastOpenedProject]);
 
     const toggleCategory = (category: string) => {
         setOpenCategories(prev => {
@@ -234,6 +244,7 @@ export const Projects: FC = () => {
             } else {
                 next.clear();
                 next.add(name);
+                setLastOpenedProject(name);
             }
             return next;
         });
