@@ -42,20 +42,26 @@ const CategoryFolder: FC<CategoryFolderProps> = ({
                 <span className="text-yellow-400">{category}/</span>
             </div>
 
-            {isOpen && (
-                <div className="ml-4">
-                    {categoryProjects.map((project, index) => (
-                        <ProjectFolder
-                            key={project.name}
-                            project={project}
-                            isOpen={openProjects.has(project.name)}
-                            onToggle={() => onToggleProject(project.name)}
-                            isLast={index === categoryProjects.length - 1}
-                            categoryIsLast={isLast}
-                        />
-                    ))}
+            <div
+                className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                    isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                }`}
+            >
+                <div className="overflow-hidden">
+                    <div className="ml-4">
+                        {categoryProjects.map((project, index) => (
+                            <ProjectFolder
+                                key={project.name}
+                                project={project}
+                                isOpen={openProjects.has(project.name)}
+                                onToggle={() => onToggleProject(project.name)}
+                                isLast={index === categoryProjects.length - 1}
+                                categoryIsLast={isLast}
+                            />
+                        ))}
+                    </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 };
@@ -93,9 +99,14 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                 <span className="text-purple-400">{project.name}/</span>
             </div>
 
-            {isOpen && (
-                <div className="ml-4">
-                    <div className="flex gap-0 p-1 text-gray-400">
+            <div
+                className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                    isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                }`}
+            >
+                <div className="overflow-hidden">
+                    <div className="ml-4">
+                        <div className="flex gap-0 p-1 text-gray-400">
                         <span className="select-none shrink-0">├── </span>
                         <span>README.md</span>
                     </div>
@@ -201,8 +212,9 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                             </div>
                         </>
                     )}
+                    </div>
                 </div>
-            )}
+            </div>
         </div>
     );
 };
@@ -217,9 +229,11 @@ export const Projects: FC = () => {
 
     useEffect(() => {
         if (lastOpenedProject) {
-            const element = document.getElementById(`project-${lastOpenedProject}`);
-            element?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            const timer = setTimeout(() => setLastOpenedProject(null), 100);
+            const timer = setTimeout(() => {
+                const element = document.getElementById(`project-${lastOpenedProject}`);
+                element?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setLastOpenedProject(null);
+            }, 350);
             return () => clearTimeout(timer);
         }
     }, [lastOpenedProject]);
