@@ -185,7 +185,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                 <span className="select-none shrink-0">└── </span>
                                 <span>img/</span>
                             </div>
-                            <div className="ml-4 mb-2">
+                            <div className="ml-10 mt-1">
                                 <a
                                     href={project.image}
                                     target="_blank"
