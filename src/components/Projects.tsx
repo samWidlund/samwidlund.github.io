@@ -116,7 +116,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                     {project.links && (
                         <>
                             <div className="flex gap-0 p-1 text-gray-400">
-                                <span className="select-none shrink-0">└── </span>
+                                <span className="select-none shrink-0">├── </span>
                                 <span>links/</span>
                             </div>
                             <div className="ml-4 flex flex-col gap-1 break-all">
@@ -175,6 +175,29 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                         <span>tradera</span>
                                     </a>
                                 )}
+                            </div>
+                        </>
+                    )}
+
+                    {project.image && (
+                        <>
+                            <div className="flex gap-0 p-1 text-gray-400">
+                                <span className="select-none shrink-0">└── </span>
+                                <span>img/</span>
+                            </div>
+                            <div className="ml-4 mb-2">
+                                <a
+                                    href={project.image}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block"
+                                >
+                                    <img
+                                        src={project.image}
+                                        alt={project.name}
+                                        className="max-w-[200px] max-h-[150px] border border-gray-600 rounded hover:border-[#39FF14] transition-colors"
+                                    />
+                                </a>
                             </div>
                         </>
                     )}

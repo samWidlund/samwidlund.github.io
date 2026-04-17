@@ -11,6 +11,7 @@ export interface Project {
     category: string;
     description: string;
     tech: string[];
+    image?: string;
     links?: ProjectLink;
 }
 
@@ -20,6 +21,7 @@ export const projects: Project[] = [
         category: 'social',
         description: 'resale of curated outdoor & designer garments',
         tech: ['instagram', 'tiktok', 'tradera'],
+        image: '/images/garderobenwInstagram.jpg',
         links: {
             instagram: 'https://www.instagram.com/garderoben.w',
             tiktok: 'https://www.tiktok.com/@garderoben.w',
@@ -32,6 +34,7 @@ export const projects: Project[] = [
         category: 'python',
         description: 'thesaurus & dictionary api',
         tech: ['Shell', 'Python'],
+        image: '/images/wordTool.png',
         links: {
             github: 'https://github.com/samWidlund/wordTool',
         },
@@ -41,6 +44,7 @@ export const projects: Project[] = [
         category: 'web',
         description: 'simple to-do list web application',
         tech: ['HTML', 'CSS', 'JavaScript'],
+        image: '/images/todolistWebProject.jpg',
         links: {
             live: 'https://samwidlund.github.io/todolistWeb/',
             github: 'https://github.com/samWidlund/todolistWeb',
@@ -51,6 +55,7 @@ export const projects: Project[] = [
         category: 'dotnet',
         description: '.NET MAUI to-do list application',
         tech: ['.NET MAUI', 'C#'],
+        image: '/images/dotnetTodoList.png',
         links: {
             github: 'https://github.com/samWidlund/todolistDotnetMAUI',
         },
@@ -60,6 +65,7 @@ export const projects: Project[] = [
         category: 'web',
         description: 'web jewelry shop template',
         tech: ['HTML', 'CSS', 'JavaScript'],
+        image: '/images/jewelryShopTemplate.jpg',
         links: {
             live: 'https://samwidlund.github.io/jewelryShopTemplate',
             github: 'https://github.com/samWidlund/jewelryShopTemplate',
@@ -70,6 +76,7 @@ export const projects: Project[] = [
         category: 'web',
         description: 'web calculator',
         tech: ['HTML', 'CSS', 'JavaScript'],
+        image: '/images/calculatorWebProject.jpg',
         links: {
             live: 'https://samwidlund.github.io/calculatorWeb/',
             github: 'https://github.com/samWidlund/calculatorWeb',
@@ -80,6 +87,7 @@ export const projects: Project[] = [
         category: 'web',
         description: 'web shop template for garderoben.w',
         tech: ['HTML', 'CSS', 'Bootstrap'],
+        image: '/images/garderobenwTemplate.jpg',
         links: {
             live: 'https://samwidlund.github.io/garderobenwTemplate',
             github: 'https://github.com/samWidlund/garderobenwTemplate',
@@ -91,6 +99,7 @@ export const projects: Project[] = [
         description:
             'buss schedule monitor fetching live data from ul and gtfs API',
         tech: ['HTML', 'CSS', 'JavaScript', 'SQLite'],
+        image: '/images/bussMonitoWebProject.jpg',
         links: {
             github: 'https://github.com/NTIG-Uppsala/bus-schedule-remastered',
         },
@@ -109,6 +118,7 @@ export const projects: Project[] = [
             'Python',
             'Selenium',
         ],
+        image: '/images/blaklintenWebProject.png',
         links: {
             live: 'https://ntig-uppsala.github.io/blaklinten/',
             github: 'https://github.com/NTIG-Uppsala/blaklinten',
@@ -127,6 +137,7 @@ export const projects: Project[] = [
             'Python',
             'Selenium',
         ],
+        image: '/images/ntbBiluthyrningWebProject.png',
         links: {
             live: 'https://ntig-uppsala.github.io/ntbbiluthyrning/',
             github: 'https://github.com/NTIG-Uppsala/ntbbiluthyrning',
@@ -137,6 +148,7 @@ export const projects: Project[] = [
         category: 'python',
         description: 'math challenge alarm clock with Raspberry Pi 3',
         tech: ['Python', 'Raspberry Pi 3'],
+        image: '/images/gaAlarmClockProject.jpg',
         links: {
             github: 'https://github.com/samWidlund/mathAlarmClock',
         },
