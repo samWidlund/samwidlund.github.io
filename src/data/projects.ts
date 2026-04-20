@@ -50,6 +50,50 @@ export const projects: Project[] = [
         },
     },
     {
+        name: 'partyW',
+        category: 'web',
+        description: 'Vibe coded pre-party website with games',
+        tech: ['React', 'Typescript', 'CSS', 'Vite', 'Groq & Web Audio API'],
+        image: '/images/partyW.jpg',
+        links: {
+            live: 'https://samwidlund.github.io/partyw/',
+            github: 'https://github.com/samWidlund/partyw',
+        },
+    },
+    {
+        name: 'gamlaupsalalivs(wip)',
+        category: 'web',
+        description: 'Website for local grocery store in Gamla Uppsala, Sweden',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        image: '/images/gamlaUpsalaLivs.jpg',
+        links: {
+            live: 'https://samwidlund.github.io/gamlaupsalalivs/',
+            github: 'https://github.com/samWidlund/gamlaupsalalivs',
+        },
+    },
+    {
+        name: 'kalibreringskompaniet(wip)',
+        category: 'web',
+        description: 'Website for calibration company based in Uppsala, Sweden',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        image: '/images/gamlaUpsalaLivs.jpg',
+        links: {
+            live: 'https://samwidlund.github.io/gamlaupsalalivs/',
+            github: 'https://github.com/samWidlund/gamlaupsalalivs',
+        },
+    },
+    {
+        name: 'maratonPlan',
+        category: 'web',
+        description: 'Linux terminal inspired training plan viewer for csv files',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        image: '/images/maratonPlan.jpg',
+        links: {
+            live: 'https://samwidlund.github.io/maratonPlan/',
+            github: 'https://github.com/samWidlund/maratonPlan',
+        },
+    },
+    {
         name: 'todolistWeb',
         category: 'web',
         description: 'Simple to-do list web application',
