@@ -18,9 +18,9 @@ export interface Project {
 export const projects: Project[] = [
     {
         name: 'garderoben.w',
-        category: 'social',
-        description: 'resale of curated outdoor & designer garments',
-        tech: ['instagram', 'tiktok', 'tradera'],
+        category: 'e_commerce',
+        description: 'Resale of curated outdoor & designer garments via social media',
+        tech: ['Instagram', 'TikTok', 'Tradera', 'Shopify'],
         image: '/images/garderobenwInstagram.jpg',
         links: {
             instagram: 'https://www.instagram.com/garderoben.w',
@@ -33,7 +33,7 @@ export const projects: Project[] = [
         name: 'productScraper',
         category: 'python',
         description: 'Automated scraping of multiple marketplaces notifying via telegram bot',
-        tech: ['Python', 'Github Actions', 'Telegram bot API', 'Multiple marketplace APIs', 'SQLite', 'Supabase'],
+        tech: ['Python', 'GitHub Actions', 'Telegram Bot API', 'Multiple Marketplace APIs', 'SQLite', 'Supabase'],
         image: '/images/productScraper.png',
         links: {
             github: 'https://github.com/samWidlund/productScraper',
@@ -42,8 +42,8 @@ export const projects: Project[] = [
     {
         name: 'wordTool',
         category: 'python',
-        description: 'thesaurus & dictionary api',
-        tech: ['Shell', 'Python'],
+        description: 'Simple command-line linux tool for fetching word definitions and translations',
+        tech: ['Shell', 'Python', 'Thesaurus & Dictionary API'],
         image: '/images/wordTool.png',
         links: {
             github: 'https://github.com/samWidlund/wordTool',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     {
         name: 'todolistWeb',
         category: 'web',
-        description: 'simple to-do list web application',
+        description: 'Simple to-do list web application',
         tech: ['HTML', 'CSS', 'JavaScript'],
         image: '/images/todolistWebProject.jpg',
         links: {
@@ -62,9 +62,9 @@ export const projects: Project[] = [
     },
     {
         name: 'dotnetTodoList',
-        category: 'dotnet',
-        description: '.NET MAUI to-do list application',
-        tech: ['.NET MAUI', 'C#'],
+        category: '.NET',
+        description: 'Simple to-do list .NET MAUI application',
+        tech: ['.NET MAUI', 'C#', 'Visual Studio'],
         image: '/images/dotnetTodoList.png',
         links: {
             github: 'https://github.com/samWidlund/todolistDotnetMAUI',
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     {
         name: 'jewelryShopTemplate',
         category: 'web',
-        description: 'web jewelry shop template',
+        description: 'Jewelry shop web template',
         tech: ['HTML', 'CSS', 'JavaScript'],
         image: '/images/jewelryShopTemplate.jpg',
         links: {
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     {
         name: 'calculatorWeb',
         category: 'web',
-        description: 'web calculator',
+        description: 'Simple web calculator',
         tech: ['HTML', 'CSS', 'JavaScript'],
         image: '/images/calculatorWebProject.jpg',
         links: {
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     {
         name: 'garderobenwTemplate',
         category: 'web',
-        description: 'web shop template for garderoben.w',
+        description: 'Old template for personal e-commerce garderoben.w',
         tech: ['HTML', 'CSS', 'Bootstrap'],
         image: '/images/garderobenwTemplate.jpg',
         links: {
@@ -106,9 +106,8 @@ export const projects: Project[] = [
     {
         name: 'bussScheduleMonitor',
         category: 'other',
-        description:
-            'buss schedule monitor fetching live data from ul and gtfs API',
-        tech: ['HTML', 'CSS', 'JavaScript', 'SQLite'],
+        description: 'Buss schedule monitor fetching live data displayed in school corridor',
+        tech: ['HTML', 'CSS', 'JavaScript', 'SQLite', 'UL & GTFS API', 'Raspberry Pi 3'],
         image: '/images/bussMonitoWebProject.jpg',
         links: {
             github: 'https://github.com/NTIG-Uppsala/bus-schedule-remastered',
@@ -117,7 +116,7 @@ export const projects: Project[] = [
     {
         name: 'blaklinten',
         category: 'web',
-        description: 'web florist blåklinten',
+        description: 'Florist blåklinten',
         tech: [
             'HTML',
             'CSS',
@@ -137,7 +136,7 @@ export const projects: Project[] = [
     {
         name: 'ntbBiluthyrning',
         category: 'web',
-        description: 'web car rental booking system',
+        description: 'Car rental booking system',
         tech: [
             'HTML',
             'CSS',
@@ -156,7 +155,7 @@ export const projects: Project[] = [
     {
         name: 'mathChallengeAlarm',
         category: 'python',
-        description: 'math challenge alarm clock with Raspberry Pi 3',
+        description: 'Math challenge alarm clock, Highschool project',
         tech: ['Python', 'Raspberry Pi 3'],
         image: '/images/gaAlarmClockProject.jpg',
         links: {

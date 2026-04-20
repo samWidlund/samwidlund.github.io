@@ -220,7 +220,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
 };
 
 export const Projects: FC = () => {
-    const sortedCategories = ['social', 'web', 'python', 'dotnet', 'other'];
+    const sortedCategories = ['e_commerce', 'web', 'python', '.NET', 'other'];
     const [openCategories, setOpenCategories] = useState<Set<string>>(
         new Set(sortedCategories)
     );
