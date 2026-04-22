@@ -79,7 +79,7 @@ export default function App() {
                                 </span>
                             )}
                         </span>
-                        <h1 className="text-2xl font-bold text-[#39FF14] animate-slide-in self-end">
+                        <h1 className="text-2xl font-bold text-orange-500 animate-slide-in self-end">
                             samuel Widlund
                         </h1>
                     </div>
