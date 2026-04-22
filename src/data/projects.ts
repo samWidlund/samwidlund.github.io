@@ -78,8 +78,8 @@ export const projects: Project[] = [
         tech: ['HTML', 'CSS', 'JavaScript'],
         image: '/images/kalibreringsKompaniet.png',
         links: {
-            live: 'https://samwidlund.github.io/kalibreringskompaniet/',
-            github: 'https://github.com/samWidlund/kalibreringskompaniet',
+            live: 'https://samwidlund.github.io/kalibreringskompaniet-template/',
+            github: 'https://github.com/samWidlund/kalibreringskompaniet-template',
         },
     },
     {
