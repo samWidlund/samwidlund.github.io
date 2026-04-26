@@ -29,7 +29,7 @@ export function GlowingParticles() {
     if (!ctx) return
 
     const particles: Particle[] = []
-    const particleCount = 7
+    const particleCount = 3
 
     const resize = () => {
       if (!canvas) return
