@@ -5,6 +5,7 @@ import { GitLog } from './components/GitLog';
 import { Projects } from './components/Projects';
 import { About } from './components/About';
 import { Footer } from './components/Footer';
+import { BigW } from './components/BigW';
 
 export default function App() {
     const [currentPath] = useState('~');
@@ -46,6 +47,7 @@ export default function App() {
 
     return (
         <div className="min-h-screen flex flex-col font-mono text-sm">
+            <BigW />
             <div className="h-dvh flex flex-col">
                 <div className="sticky top-0 w-full flex p-2 justify-center text-white bg-[rgba(30,30,30,0.85)] backdrop-blur-sm shadow-[0_1px_0_rgba(100,100,100,0.3)]">
                     ultra@runner: ~/coding/clothing/design
