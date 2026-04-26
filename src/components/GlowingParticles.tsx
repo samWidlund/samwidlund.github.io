@@ -14,8 +14,8 @@ interface Particle {
 }
 
 const COLORS = [
-  { r: 255, g: 118, b: 13 },
-  { r: 255, g: 140, b: 50 },
+  { r: 255, g: 255, b: 255 },
+  { r: 240, g: 240, b: 240 },
 ]
 
 export function GlowingParticles() {
@@ -29,7 +29,7 @@ export function GlowingParticles() {
     if (!ctx) return
 
     const particles: Particle[] = []
-    const particleCount = 20
+    const particleCount = 7
 
     const resize = () => {
       if (!canvas) return
