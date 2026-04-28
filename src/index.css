@@ -46,3 +46,16 @@
 .animate-fade-in {
   animation: fadeIn 0.15s ease-out forwards;
 }
+
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.animate-spin-y {
+  animation: spinY 6s linear infinite;
+}
