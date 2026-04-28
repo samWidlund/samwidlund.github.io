@@ -9,16 +9,46 @@ export function BigW() {
           height: '45vw',
         }}
       >
-        <div className="absolute inset-0 flex items-center justify-center" style={{ backfaceVisibility: 'hidden' as const }}>
-          <span className="text-[45vw] leading-none font-black" style={{ color: 'rgba(255, 118, 13, 0.08)', fontFamily: 'ui-monospace, monospace' }}>
-            W
-          </span>
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center" style={{ backfaceVisibility: 'hidden' as const, transform: 'rotateY(180deg)' }}>
-          <span className="text-[45vw] leading-none font-black" style={{ color: 'rgba(255, 118, 13, 0.08)', fontFamily: 'ui-monospace, monospace' }}>
-            W
-          </span>
-        </div>
+        <svg
+          width="100%"
+          height="100%"
+          style={{ transformStyle: 'preserve-3d' }}
+        >
+          {/* Front W */}
+          <g style={{ backfaceVisibility: 'hidden' }}>
+            <text
+              x="50%"
+              y="50%"
+              dominantBaseline="central"
+              textAnchor="middle"
+              fontSize="45vw"
+              fontWeight="black"
+              fontFamily="ui-monospace, monospace"
+              fill="rgba(255, 118, 13, 0.08)"
+              stroke="rgba(255, 118, 13, 0.03)"
+              strokeWidth={10}
+            >
+              W
+            </text>
+          </g>
+          {/* Back W (180deg Y rotation) */}
+          <g style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
+            <text
+              x="50%"
+              y="50%"
+              dominantBaseline="central"
+              textAnchor="middle"
+              fontSize="45vw"
+              fontWeight="black"
+              fontFamily="ui-monospace, monospace"
+              fill="rgba(255, 118, 13, 0.08)"
+              stroke="rgba(255, 118, 13, 0.03)"
+              strokeWidth={10}
+            >
+              W
+            </text>
+          </g>
+        </svg>
       </div>
     </div>
   )
