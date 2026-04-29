@@ -6,6 +6,7 @@ import { Projects } from './components/Projects';
 import { About } from './components/About';
 import { Footer } from './components/Footer';
 import { BigW } from './components/BigW';
+import { GlowingParticles } from './components/GlowingParticles';
 
 export default function App() {
     const [currentPath] = useState('~');
