@@ -112,7 +112,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                     </div>
                     <div className="flex gap-0 p-1 text-gray-400">
                         <span className='text-gray-400'>│</span>
-                        <span className="select-none shrink-0 ml-4">└── </span>
+                        <span className="select-none shrink-0 ml-4"></span>
                         <span className="text-gray-300">{project.description}</span>
                     </div>
 
@@ -122,7 +122,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                     </div>
                     <div className="flex gap-0 p-1">
                         <span className='text-gray-400'>│</span>
-                        <span className="select-none shrink-0 ml-4 text-gray-400">└── </span>
+                        <span className="select-none shrink-0 ml-4 text-gray-400"></span>
                         <span className="text-white"> {project.tech.join(', ')}</span>
                     </div>
 
@@ -200,7 +200,7 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                                 <span className="select-none shrink-0">└── </span>
                                 <span>img/</span>
                             </div>
-                            <div className="ml-10 mt-1">
+                            <div className="ml-8 mt-1">
                                 <a
                                     href={project.image}
                                     target="_blank"
