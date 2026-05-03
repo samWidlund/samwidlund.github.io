@@ -144,8 +144,8 @@ export const GitLog: FC = () => {
       <div className="mb-1">
         <span className="text-[#39FF14]">$</span> resume log --graph --all
       </div>
-      <div className="my-6 text-lg text-[#39FF14] font-bold text-center">
-        ═══ EDUCATION ═══
+      <div className="my-6 text-lg text-[#39FF14] font-bold">
+        ~/EDUCATION
       </div>
       {education.map((edu, i) => (
         <GitCommitEducation
@@ -155,8 +155,8 @@ export const GitLog: FC = () => {
           isOnly={education.length === 1}
         />
       ))}
-      <div className="my-6 text-lg text-[#39FF14] font-bold text-center">
-        ═══ EXPERIENCE ═══
+      <div className="my-6 text-lg text-[#39FF14] font-bold">
+        ~/EXPERIENCE
       </div>
       {experiences.map((exp, i) => (
         <GitCommitExperience
