@@ -107,7 +107,6 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                 <div className="overflow-hidden">
                     <div className="ml-4">
                         <div className="flex gap-0 p-1 text-gray-400">
-                        <span className="select-none shrink-0">├── </span>
                         <span>README.md</span>
                     </div>
                     <div className="flex gap-0 p-1 text-gray-400">
@@ -116,7 +115,6 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                     </div>
 
                     <div className="flex gap-0 p-1 text-gray-400">
-                        <span className="select-none shrink-0">├── </span>
                         <span>stack/</span>
                     </div>
                     <div className="flex gap-0 p-1">
@@ -127,7 +125,6 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                     {project.links && (
                         <>
                             <div className="flex gap-0 p-1 text-gray-400">
-                                <span className="select-none shrink-0">├── </span>
                                 <span>links/</span>
                             </div>
                             <div className="ml-1 flex flex-col gap-1 break-all">
@@ -193,7 +190,6 @@ const ProjectFolder: FC<ProjectFolderProps> = ({
                     {project.image && (
                         <>
                             <div className="flex gap-0 p-1 text-gray-400">
-                                <span className="select-none shrink-0">└── </span>
                                 <span>img/</span>
                             </div>
                             <div className="ml-8 mt-1">
