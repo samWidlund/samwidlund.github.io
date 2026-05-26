@@ -24,6 +24,7 @@ export const About: FC = () => {
                     <p>- [x] SQL, SQLite </p>
                     <p>- [x] Selenium, FlaUI </p>
                     <p>- [x] Scrum, git </p>
+                    <p>- [x] SCADA </p>
                     <br />
                     <p>## Links</p>
                     <a href="https://github.com/samWidlund" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:underline'>Github</a>
