@@ -30,7 +30,7 @@ export const projects: Project[] = [
         },
     },
     {
-        name: 'productScraper',
+        name: 'resell-helper',
         category: 'python',
         description: 'Automated scraping of multiple marketplaces notifying via telegram bot',
         tech: ['Python', 'GitHub Actions', 'Telegram Bot API', 'Multiple Marketplace APIs', 'SQLite', 'Supabase'],
