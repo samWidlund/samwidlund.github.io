@@ -11,8 +11,7 @@ export const About: FC = () => {
                     <p># Intro</p>
                     <p>Based in Uppsala, Sweden with a keen interest in web development,
                     software and design. In addition, I spend my free time engaging in
-                    ultrarunning aswell as reselling clothing. Currently training for
-                    tänndalen 100 miles. </p>
+                    ultrarunning aswell as reselling clothing. Latest race was <a href="https://tanndalen100.com/" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:underline'>Tänndalen 100 miles</a>.</p>
                     <br />
                     <p>## Tech</p>
                     <p>- [x] JavaScript, TypeScript, React </p>
