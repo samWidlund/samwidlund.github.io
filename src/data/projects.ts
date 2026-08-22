@@ -30,13 +30,13 @@ export const projects: Project[] = [
         },
     },
     {
-        name: 'productScraper',
+        name: 'resell-helper',
         category: 'python',
         description: 'Automated scraping of multiple marketplaces notifying via telegram bot',
         tech: ['Python', 'GitHub Actions', 'Telegram Bot API', 'Multiple Marketplace APIs', 'SQLite', 'Supabase'],
-        image: '/images/productScraper.png',
+        image: '/images/resell-helper.png',
         links: {
-            github: 'https://github.com/samWidlund/productScraper',
+            github: 'https://github.com/samWidlund/resell-helper',
         },
     },    
     {
