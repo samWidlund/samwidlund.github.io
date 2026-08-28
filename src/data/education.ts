@@ -9,7 +9,7 @@ export interface Education {
 export const education: Education[] = [
   {
     hash: 'i2m3n4o',
-    degree: "Bachelor's in Computer Science",
+    degree: "Bachelor's  programme in computer Science",
     school: 'Uppsala Universitet',
     period: 'Aug 2026 - current',
     info: ['Systems', 'Mathematics', 'Programming']
