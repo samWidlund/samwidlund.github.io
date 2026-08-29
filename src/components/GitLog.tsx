@@ -42,13 +42,12 @@ const LineWithPrefix: FC<{
 const GitCommitExperience: FC<{
   experience: (typeof experiences)[number]
   isLast: boolean
-  isOnly: boolean
   isFirst: boolean
   hasOrigin: boolean
-}> = ({ experience, isLast, isOnly, isFirst, hasOrigin }) => {
+}> = ({ experience, isLast, isFirst, hasOrigin }) => {
   const isCurrent = experience.period.includes('current')
-  const branchChar = isCurrent ? '*' : isOnly || isLast ? '├' : '├'
-  const lineChar = isOnly || isLast ? '│' : '│'
+  const branchChar = isCurrent ? '*' : '├'
+  const lineChar = '│'
 
   const shortHash = experience.hash.slice(0, 7)
   const refs = isFirst ? 'HEAD -> main' : hasOrigin && isLast ? 'portfolio/main' : ''
@@ -96,12 +95,15 @@ const GitCommitExperience: FC<{
 const GitCommitEducation: FC<{
   edu: (typeof education)[number]
   isLast: boolean
-  isOnly: boolean
-}> = ({ edu, isLast, isOnly }) => {
-  const branchChar = isOnly || isLast ? '├' : '├'
-  const lineChar = isOnly || isLast ? '│' : '│'
+  isFirst: boolean
+  hasOrigin: boolean
+}> = ({ edu, isLast, isFirst, hasOrigin }) => {
+  const isCurrent = edu.period.includes('current')
+  const branchChar = isCurrent ? '*' : '├'
+  const lineChar = '│'
 
   const shortHash = edu.hash.slice(0, 7)
+  const refs = isFirst ? 'HEAD -> main' : hasOrigin && isLast ? 'portfolio/main' : ''
 
   return (
     <div>
@@ -110,6 +112,9 @@ const GitCommitEducation: FC<{
         <span className="text-cyan-400">─</span>
         <span className="text-yellow-400">commit </span>
         <span className="text-yellow-400">{shortHash}</span>
+        {refs && (
+          <span className={refs === 'portfolio/main' ? 'text-red-600' : 'text-cyan-400'}> ({refs})</span>
+        )}
       </div>
       <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Degree: </span>
@@ -121,7 +126,7 @@ const GitCommitEducation: FC<{
       </LineWithPrefix>
       <LineWithPrefix prefix={lineChar}>
         <span className="font-bold">Date:   </span>
-        <span>{edu.period}</span>
+        <span className={isCurrent ? 'text-cyan-400 font-bold' : ''}>{edu.period}</span>
       </LineWithPrefix>
       {edu.info.map((info, i) => (
         <LineWithPrefix key={i} prefix={lineChar}>
@@ -152,7 +157,8 @@ export const GitLog: FC = () => {
           key={edu.hash}
           edu={edu}
           isLast={i === education.length - 1}
-          isOnly={education.length === 1}
+          isFirst={i === 0}
+          hasOrigin={false}
         />
       ))}
       <div className="my-6 text-lg text-[#39FF14] font-bold">
@@ -163,8 +169,7 @@ export const GitLog: FC = () => {
           key={exp.hash}
           experience={exp}
           isLast={i === experiences.length - 1}
-          isOnly={experiences.length === 1}
-          isFirst={i === 0}
+          isFirst={false}
           hasOrigin={i === experiences.length - 1}
         />
       ))}
