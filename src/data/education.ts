@@ -12,7 +12,7 @@ export const education: Education[] = [
     degree: "Computer Science",
     school: 'Uppsala Universitet',
     period: 'Aug 2026 - current',
-    info: ['Bachelor of Science', 'IT', 'Systems', 'Mathematics', 'Programming']
+    info: ['Bachelor of Science' , 'Systems', 'Mathematics', 'Programming', 'IT']
   },
   {
     hash: 'a1b2c3d',
