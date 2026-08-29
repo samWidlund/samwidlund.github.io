@@ -41,16 +41,15 @@ const LineWithPrefix: FC<{
 
 const GitCommitExperience: FC<{
   experience: (typeof experiences)[number]
-  isLast: boolean
   isFirst: boolean
   hasOrigin: boolean
-}> = ({ experience, isLast, isFirst, hasOrigin }) => {
+}> = ({ experience, isFirst, hasOrigin }) => {
   const isCurrent = experience.period.includes('current')
   const branchChar = isCurrent ? '*' : '├'
   const lineChar = '│'
 
   const shortHash = experience.hash.slice(0, 7)
-  const refs = isFirst ? 'HEAD -> main' : hasOrigin && isLast ? 'portfolio/main' : ''
+  const refs = isFirst ? 'HEAD -> main' : hasOrigin ? 'portfolio/main' : ''
 
   return (
     <div>
@@ -94,16 +93,15 @@ const GitCommitExperience: FC<{
 
 const GitCommitEducation: FC<{
   edu: (typeof education)[number]
-  isLast: boolean
   isFirst: boolean
   hasOrigin: boolean
-}> = ({ edu, isLast, isFirst, hasOrigin }) => {
+}> = ({ edu, isFirst, hasOrigin }) => {
   const isCurrent = edu.period.includes('current')
   const branchChar = isCurrent ? '*' : '├'
   const lineChar = '│'
 
   const shortHash = edu.hash.slice(0, 7)
-  const refs = isFirst ? 'HEAD -> main' : hasOrigin && isLast ? 'portfolio/main' : ''
+  const refs = isFirst ? 'HEAD -> main' : hasOrigin ? 'portfolio/main' : ''
 
   return (
     <div>
@@ -156,7 +154,6 @@ export const GitLog: FC = () => {
         <GitCommitEducation
           key={edu.hash}
           edu={edu}
-          isLast={i === education.length - 1}
           isFirst={i === 0}
           hasOrigin={false}
         />
@@ -168,9 +165,8 @@ export const GitLog: FC = () => {
         <GitCommitExperience
           key={exp.hash}
           experience={exp}
-          isLast={i === experiences.length - 1}
           isFirst={false}
-          hasOrigin={i === experiences.length - 1}
+          hasOrigin={i === 0}
         />
       ))}
     </div>
