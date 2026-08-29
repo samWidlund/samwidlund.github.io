@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 interface TypewriterProps {
   text: string
@@ -11,23 +11,23 @@ interface TypewriterProps {
 export function Typewriter({ text, speed = 100, className = '', cursor = true, onComplete }: TypewriterProps) {
   const [displayed, setDisplayed] = useState('')
   const [done, setDone] = useState(false)
-  const calledRef = useRef(false)
+  const [prevKey, setPrevKey] = useState(`${text}|${speed}`)
+
+  if (prevKey !== `${text}|${speed}`) {
+    setPrevKey(`${text}|${speed}`)
+    setDisplayed('')
+    setDone(false)
+  }
 
   useEffect(() => {
     let i = 0
-    setDisplayed('')
-    setDone(false)
-    calledRef.current = false
     const interval = setInterval(() => {
       if (i < text.length) {
         setDisplayed(text.slice(0, i + 1))
         i++
       } else {
         setDone(true)
-        if (!calledRef.current) {
-          calledRef.current = true
-          onComplete?.()
-        }
+        onComplete?.()
         clearInterval(interval)
       }
     }, speed)
