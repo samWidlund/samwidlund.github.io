@@ -11,7 +11,7 @@ export const experiences: Experience[] = [
     hash: 'b7c9d2e',
     role: 'Process Operator',
     company: 'Fresenius Kabi Uppsala',
-    period: 'May 2025 - current',
+    period: 'May 2025 - Aug 2026',
     info: ['5-Shift', 'Fill-finish', 'Aseptic manufacturing', 'Process control', 'GMP, Documentation', 'Mechanical troubleshooting', 'Forklift', 'SCADA', 'Supervision']
   },
   {
