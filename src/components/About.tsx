@@ -12,11 +12,11 @@ export const About: FC = () => {
                     <p>Computer Science student based in Uppsala, Sweden with a keen interest in software development and design. In addition, I spend my free time engaging in
                     ultrarunning aswell as reselling clothing. Latest race was Tänndalen 100 miles, currently training for Uppsala marathon.</p>
                     <br />
-                    <p>## Tech</p>
+                    <p>## Familiar Tech</p>
                     <p>- [x] JavaScript, TypeScript, React </p>
                     <p>- [x] CSS, Tailwind, Bootstrap </p>
                     <p>- [x] Python, C#, VBScript </p>
-                    <p>- [x] Bash, Powershell </p>
+                    <p>- [x] Fish, Bash, Powershell </p>
                     <p>- [x] Windows, Linux </p>
                     <p>- [x] Azure, Pipelines, Yaml </p>
                     <p>- [x] SQL, SQLite </p>
